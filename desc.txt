@@ -1,0 +1,9 @@
+http://zetcode.com/tutorials/javagamestutorial/basics/
+Kompilacja z linii komand:
+javac src/com/kkolcz/Application.java src/com/kkolcz/Board.java 
+
+
+http://stackoverflow.com/questions/18093928/what-does-could-not-find-or-load-main-class-mean
+
+cd src
+javac com/kkolcz/Application.java com/kkolcz/Board.java
