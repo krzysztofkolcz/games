@@ -2,3 +2,4 @@
 target/
 .idea
 projectHibernate.iml
+.class

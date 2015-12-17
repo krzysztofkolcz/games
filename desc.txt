@@ -7,3 +7,11 @@ http://stackoverflow.com/questions/18093928/what-does-could-not-find-or-load-mai
 
 cd src
 javac com/kkolcz/Application.java com/kkolcz/Board.java
+
+
+echo "# games" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/krzysztofkolcz/games.git
+git push -u origin master
