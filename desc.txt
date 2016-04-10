@@ -1,4 +1,19 @@
+echo "# games" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/krzysztofkolcz/games.git
+git push -u origin master
+
+http://zetcode.com/tutorials/javagamestutorial/basics/
 http://zetcode.com/tutorials/javagamestutorial/
+http://stackoverflow.com/questions/18093928/what-does-could-not-find-or-load-main-class-mean
+
+Kompilacja z linii komand:
+cd src
+javac com/kkolcz/Application.java com/kkolcz/Board.java
+
+lub
 cd games/src/main
 javac com/kkolcz/*.java
 java com.kkolcz.Application
@@ -25,3 +40,4 @@ java com.kkolcz.DonutExample
 ImageExample extends JFrame
 BoardImage extends JPanel
 java com.kkolcz.ImageExample
+
