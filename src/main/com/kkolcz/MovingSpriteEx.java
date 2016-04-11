@@ -3,30 +3,26 @@ package com.kkolcz;
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 
+public class MovingSpriteEx extends JFrame {
 
-public class Application extends JFrame {
-    
-    public Application() {
-
+    public MovingSpriteEx() {
         initUI();
     }
-
-    private void initUI() {
-
-        add(new Board());
-
-        setSize(250, 200);
-
-        setTitle("Application");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null);
-    }    
     
+    private void initUI() {
+        add(new CraftBoard());
+        setSize(400, 300);
+        setResizable(false);
+        setTitle("Moving sprite");
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                Application ex = new Application();
+                MovingSpriteEx ex = new MovingSpriteEx();
                 ex.setVisible(true);
             }
         });

@@ -41,3 +41,11 @@ ImageExample extends JFrame
 BoardImage extends JPanel
 java com.kkolcz.ImageExample
 
+*SwingTimerExample & SwingTimerBoard 
+
+*ThreadAnimationExample & ThreadAnimationBoard
+
+*UtilityTimerExample & UtilityTimerBoard
+
+TOOD - jak kompilować, jeżeli klasy są w pakiecie?
+*MovingSpriteEx & Craft & CraftBoard
