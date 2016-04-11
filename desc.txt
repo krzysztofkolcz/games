@@ -1,17 +1,43 @@
-http://zetcode.com/tutorials/javagamestutorial/basics/
-Kompilacja z linii komand:
-javac src/com/kkolcz/Application.java src/com/kkolcz/Board.java 
-
-
-http://stackoverflow.com/questions/18093928/what-does-could-not-find-or-load-main-class-mean
-
-cd src
-javac com/kkolcz/Application.java com/kkolcz/Board.java
-
-
 echo "# games" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/krzysztofkolcz/games.git
 git push -u origin master
+
+http://zetcode.com/tutorials/javagamestutorial/basics/
+http://zetcode.com/tutorials/javagamestutorial/
+http://stackoverflow.com/questions/18093928/what-does-could-not-find-or-load-main-class-mean
+
+Kompilacja z linii komand:
+cd src
+javac com/kkolcz/Application.java com/kkolcz/Board.java
+
+lub
+cd games/src/main
+javac com/kkolcz/*.java
+java com.kkolcz.Application
+
+Lub w stylu mavena:
+~/IdeaProjects/games$ mkdir target
+~/IdeaProjects/games$ javac -cp src/main/com/kkolcz/*.java -d target 
+~/IdeaProjects/games/target$ java com.kkolcz.ImageExample
+TODO: nie jest kopiowany obrazek. Sprawdzić, czy kompilator ma opcję kopiowania plików statycznych 
+
+
+* - main class
+*Application & Board
+Application extends JFrame
+Board extends JPanel
+java com.kkolcz.Application
+
+*DonuExample & Donut
+DonuExample extends JFrame
+Donut extends JPanel
+java com.kkolcz.DonutExample
+
+*ImageExample & BoardImage
+ImageExample extends JFrame
+BoardImage extends JPanel
+java com.kkolcz.ImageExample
+
