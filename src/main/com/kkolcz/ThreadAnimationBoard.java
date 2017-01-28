@@ -12,8 +12,12 @@ import javax.swing.JPanel;
 
 public class ThreadAnimationBoard extends JPanel implements Runnable {
 
-    private final int B_WIDTH = 350;
-    private final int B_HEIGHT = 350;
+    Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+
+    /* private final int B_WIDTH = 350; */
+    /* private final int B_HEIGHT = 350; */
+    private final int B_WIDTH =screenSize.width ;
+    private final int B_HEIGHT = screenSize.height;
     private final int INITIAL_X = -40;
     private final int INITIAL_Y = -40;
     private final int DELAY = 25;

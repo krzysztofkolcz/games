@@ -1,4 +1,4 @@
-package com.kkolcz;
+package com.kkolcz.sprites;
 
 import java.awt.EventQueue;
 import javax.swing.JFrame;

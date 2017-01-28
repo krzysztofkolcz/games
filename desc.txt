@@ -47,5 +47,9 @@ java com.kkolcz.ImageExample
 
 *UtilityTimerExample & UtilityTimerBoard
 
+
+#sprites
 TOOD - jak kompilować, jeżeli klasy są w pakiecie?
 *MovingSpriteEx & Craft & CraftBoard
+
+~/IdeaProjects/games$ javac -cp src/main/com/kkolcz/sprites/*.java -d target 
