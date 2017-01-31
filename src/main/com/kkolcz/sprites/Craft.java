@@ -21,7 +21,7 @@ public class Craft extends Sprite{
     
     private void initCraft() {
 				missiles = new ArrayList();
-        ImageIcon ii = new ImageIcon("com/kkolcz/star.png");
+        ImageIcon ii = new ImageIcon("com/kkolcz/rocket3.png");
         image = ii.getImage();
         /* x = 40; */
         /* y = 60;         */
