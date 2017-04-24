@@ -2,12 +2,37 @@ package com.platformer01_ex01.bricks;
 
 import java.awt.*;
 import com.platformer01_ex01.GamePanel;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.List;
+import java.util.*;
+import java.lang.Override;
 
 public class ZBrick01 extends Brick{
+
+  private int rotation;
+
+  private Pos[][] subPosRelToCenter = {
+    /* ..  */
+    /*  .. */
+    {new Pos(-1,-1), new Pos(0,-1),new Pos(0,0),new Pos(1,0)},
+    /*  . */
+    /* .. */
+    /* .  */
+    {new Pos(0,-1), new Pos(0,0),new Pos(-1,0),new Pos(-1,1)}
+  };
+
+  @Override
+  public Pos[][] getSubPosRelToCenter(){
+    return subPosRelToCenter;
+  }
+
+  @Override
+  public int getCurrentRotation(){
+    return rotation;
+  }
+
+  @Override
+  public Pos[] getCurrentSubPosRelToCenter(){
+    return subPosRelToCenter[getCurrentRotation()];
+  }
 
   /* if brick should stop falling - touches ground or brick on the ground */
   public boolean shouldStopFalling(){
@@ -23,9 +48,11 @@ public class ZBrick01 extends Brick{
   public void init(){
     super.init();
     ishorizontal = true;
+    rotation = 0;
   }
 
   public void rotateLeft(){
+    rotation = Math.abs((rotation - 1) % 2);
     ishorizontal = !ishorizontal;
     /* ..  */
     /*  .. */
@@ -46,6 +73,7 @@ public class ZBrick01 extends Brick{
   }
 
   public void rotateRight(){
+    rotation = Math.abs((rotation + 1) % 2);
     ishorizontal = !ishorizontal;
     /* ..  */
     /*  .. */
@@ -65,29 +93,5 @@ public class ZBrick01 extends Brick{
     //TODO - check collision
   }
 
-  public List<Pos> getCurrentPosition(){
-    List<Pos> finalPos = new ArrayList<>();
-    Pos pos;
-    if(ishorizontal){
-        pos = new Pos(xpos-brickSize, ypos-brickSize);
-        finalPos.add(pos);
-        pos = new Pos(xpos, ypos-brickSize);
-        finalPos.add(pos);
-        pos = new Pos(xpos, ypos);
-        finalPos.add(pos);
-        pos = new Pos(xpos+brickSize, ypos);
-        finalPos.add(pos);
-    }else{
-        pos = new Pos(xpos, ypos-brickSize);
-        finalPos.add(pos);
-        pos = new Pos(xpos, ypos);
-        finalPos.add(pos);
-        pos = new Pos(xpos-brickSize, ypos);
-        finalPos.add(pos);
-        pos = new Pos(xpos-brickSize, ypos+brickSize);
-        finalPos.add(pos);
-    }
-    return finalPos;
-  }
 
 }

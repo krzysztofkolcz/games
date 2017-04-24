@@ -11,7 +11,7 @@ import static java.util.stream.Collectors.toList;
 
 public abstract class Brick{
 
-  
+  private List<Pos> currentPositions; 
   protected List<Pos> brickOnGround;
   protected int brickSize ;
 
@@ -46,34 +46,25 @@ public abstract class Brick{
 
   public void init(){
     brickSize = 5;
-    xpos = 160;
+    xpos = 40;
     ypos = 0;
     falling = true;
     fallSpeed = 1000; /* 50 pixel na sekunde - 50px/s - TODO */
-    /* System.out.println("fallSpeed:"+fallSpeed); */
-    //delay = (1000/fallSpeed) ; /* co ile milisekund klocek spada o 1px*/
     delay = 200;
-    /* System.out.println("delay:"+delay); */
     totalElapsed = 0;
     startTime = System.nanoTime();
     secBrickPos = new ArrayList<Integer>();
     secBrickMap = new HashMap<Integer,Long>();
   }
 
-  /* update leci 60 razy na sek */
   public boolean update(){
 		if(delay == -1) return true;
 		long elapsed = (System.nanoTime() - startTime) / 1000000;
-    /* System.out.println("startTime:"+startTime); */
-    /* System.out.println("elapsed:"+elapsed); */
     totalElapsed += elapsed;
 		if(elapsed > delay) {
       fall();
 			startTime = System.nanoTime();
 		}
-
-    /* System.out.println(totalElapsed); */
-    /* System.out.println(ypos); */
 
     if(totalElapsed > 1000){
       totalElapsed -= 1000;
@@ -89,17 +80,12 @@ public abstract class Brick{
 
     falling = checkCollision();
     if(falling){
-
       xnext = xpos;
       ynext = ypos + brickSize;
-
       xpos = xnext;
       ypos = ynext;
-
-
     }else{
     }
-
   }
 
   public boolean getFalling(){
@@ -118,78 +104,38 @@ public abstract class Brick{
     this.ypos = y;
   }
 
-
-  /* public abstract boolean checkCollision(); */
-
   public boolean checkCollision(){
     return canMoveDown();
   }
 
-
-  /* public boolean checkCollision(){ */
-  /*     if(ypos >= GamePanel.HEIGHT - brickSize){ */
-  /*       return false; */
-  /*     } */
-  /*     return true; */
-  /* } */
-
-  /* public void draw(Graphics2D g){ */
-	/* 	g.setColor(Color.BLACK); */
-  /*   g.drawRect (xpos, ypos, brickSize, brickSize); */
-	/* 	g.setColor(Color.RED); */
-  /*   secBrickMap.forEach( (oPos,oTime) ->{ g.drawRect (xpos, oPos, brickSize, brickSize); g.drawString(Long.toString(oTime), 250,oPos);} ); */
-  /* } */
-
-
   public void draw(Graphics2D g){
+    drawFill(g);
+    drawOutline(g);
+    drawCenterPoint(g);
+  }
+
+  private void drawFill(Graphics2D g){
 		g.setColor(Color.GRAY);
-    getCurrentPosition().forEach( (p) -> {g.fillRect(p.getX(), p.getY(), brickSize, brickSize);} );
+    drawCurrentPositions(g);
+  }
 
+  private void drawOutline(Graphics2D g){
 		g.setColor(Color.BLACK);
-    getCurrentPosition().forEach( (p) -> {g.drawRect(p.getX(), p.getY(), brickSize, brickSize);} );
+    drawCurrentPositions(g);
+  }
 
+  private void drawCurrentPositions(Graphics2D g){
+    getCurrentPosition().forEach( (p) -> {g.drawRect(p.getX(), p.getY(), brickSize, brickSize);} );
+  }
+
+  private void drawCenterPoint(Graphics2D g){
 		g.setColor(Color.RED);
     g.drawRect (xpos, ypos, 1, 1);
   }
-
+  
   public void printPositions(){
     getCurrentPosition().forEach( (p) -> {System.out.println("x:"+p.getX()+"; y:"+p.getY());} );
   }
-  /* public abstract void draw(Graphics2D g); */
-
-  /* public void setMoveLeft(){ */
-  /*     if(xpos > 0){ */
-  /*       xpos -= brickSize; */
-  /*     } */
-  /* } */
-  /*  */
-  /* public void stopMoveLeft(){ */
-  /* } */
-  /*  */
-  /* public void setMoveRight(){ */
-  /*     if(xpos < GamePanel.WIDTH - brickSize){ */
-  /*       xpos += brickSize; */
-  /*     } */
-  /* } */
-  /*  */
-  /* public void stopMoveRight(){ */
-  /* } */
-  /*  */
-  /* public void setMoveDown(){ */
-  /*   ypos += brickSize; */
-  /* } */
-  /*  */
-  /* public void rotateLeft(){ */
-  /*  */
-  /* } */
-  /*  */
-  /* public void rotateRight(){ */
-  /*  */
-  /* } */
-
-  /* public abstract void setMoveLeft(); */
-  /* public abstract void setMoveRight(); */
-  /* public abstract void setMoveDown(); */
 
   public void setMoveLeft(){
     if(canMoveLeft()){
@@ -208,11 +154,59 @@ public abstract class Brick{
         ypos += brickSize;
     }
   }
+
   public abstract void rotateLeft();
   public abstract void rotateRight();
-  public abstract List<Pos> getCurrentPosition();
+  public abstract Pos[][] getSubPosRelToCenter();
+  public abstract Pos[] getCurrentSubPosRelToCenter();
+  public abstract int getCurrentRotation();
 
-	public boolean hasCommonPos(List<Pos> list1,List<Pos> list2){
+  public boolean canMoveDown(){
+      List<Pos> nextPos = getNextPositions(0, brickSize);
+      List<Pos> screenRelPos = getCurrentPosition().stream().filter( p -> p.getY() >= GamePanel.HEIGHT - brickSize ).collect(toList());
+
+      if(isColisionWithBricksOnGround(nextPos) || (screenRelPos.size() > 0)){
+        return false;
+      }
+
+      return true;
+  }
+
+  public boolean canMoveLeft(){
+      List<Pos> nextPos = getNextPositions(-brickSize, 0);
+      List<Pos> screenRelPos = getCurrentPosition().stream().filter( p -> p.getX() <= 0).collect(toList());
+
+      if(isColisionWithBricksOnGround(nextPos) || (screenRelPos.size() > 0)){
+        return false;
+      }
+
+      return true;
+  }
+
+  public boolean canMoveRight(){
+      List<Pos> nextPos = getNextPositions(brickSize, 0);
+      List<Pos> screenRelPos = getCurrentPosition().stream().filter( p -> p.getX() >= GamePanel.WIDTH - brickSize - GamePanel.FIX).collect(toList());
+
+      if(isColisionWithBricksOnGround(nextPos) || (screenRelPos.size() > 0)){
+        return false;
+      }
+
+      return true;
+  }
+ 
+  private List<Pos> getNextPositions(int dx, int dy){
+      List<Pos> nextPos = getCurrentPosition().stream().map( p -> new Pos(p.getX()+dx, p.getY()+dy) ).collect(toList());
+      return nextPos;
+  }
+
+  private boolean isColisionWithBricksOnGround(List<Pos> positions){
+			if(hasCommonPos(positions,brickOnGround)){
+				return true;
+			}
+      return false;
+  }
+
+	private boolean hasCommonPos(List<Pos> list1,List<Pos> list2){
       for(Pos el1: list1){
         if(list2.contains(el1)){
           return true;
@@ -221,51 +215,20 @@ public abstract class Brick{
       return false;
 	}
 
-  public boolean canMoveDown(){
-      List<Pos> nextPos = getCurrentPosition().stream().map( p -> new Pos(p.getX(), p.getY() + brickSize) ).collect(toList());
 
-      List<Pos> screenRelPos = getCurrentPosition().stream().filter( p -> p.getY() >= GamePanel.HEIGHT - brickSize ).collect(toList());
 
-			if(screenRelPos.size() > 0){
-				return false;
-			}
-
-			/* nextPos.forEach( (p) -> {System.out.println("x:"+p.getX()+"; y:"+p.getY());} ); */
-			if(hasCommonPos(nextPos,brickOnGround)){
-				return false;
-			}
-      return true;
+  public List<Pos> getCurrentPosition(){
+    currentPositions = new ArrayList<Pos>();
+    for(Pos p : getCurrentSubPosRelToCenter()){
+      addCurrentPositions(xpos+(brickSize*p.getX()), ypos+(brickSize*p.getY()));
+    } 
+    return currentPositions;
   }
 
-  public boolean canMoveLeft(){
-      List<Pos> nextPos = getCurrentPosition().stream().map( p -> new Pos(p.getX()-brickSize, p.getY()) ).collect(toList());
-
-      List<Pos> screenRelPos = getCurrentPosition().stream().filter( p -> p.getX() <= 0).collect(toList());
-
-			if(screenRelPos.size() > 0){
-				return false;
-			}
-
-			if(hasCommonPos(nextPos,brickOnGround)){
-				return false;
-			}
-      return true;
+  private void addCurrentPositions(int x,int y){
+      Pos pos = new Pos(x,y);
+      currentPositions.add(pos);
   }
-
-  public boolean canMoveRight(){
-      List<Pos> nextPos = getCurrentPosition().stream().map( p -> new Pos(p.getX()+brickSize, p.getY()) ).collect(toList());
-
-      List<Pos> screenRelPos = getCurrentPosition().stream().filter( p -> p.getX() >= GamePanel.WIDTH - brickSize - GamePanel.FIX).collect(toList());
-
-			if(screenRelPos.size() > 0){
-				return false;
-			}
-			if(hasCommonPos(nextPos,brickOnGround)){
-				return false;
-			}
-      return true;
-  }
-
 
 }
 

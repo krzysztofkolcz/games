@@ -2,6 +2,7 @@ package com.platformer01_ex01.gamestate;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 
+import static java.util.stream.Collectors.toList;
 import java.util.Random;
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +24,8 @@ public class Level1State extends GameState{
   private boolean currentFalling;
   private Random generator ;
   private int brickSize = 5; // TODO - param
-	
+  private List<List<Pos>> fullLinesTemplate;
+
 	public Level1State(GameStateManager gsm) {
 		this.gsm = gsm;
 		init();
@@ -41,36 +43,49 @@ public class Level1State extends GameState{
     brickTypes.add(new PlusBrick());
 
     brickCount = brickTypes.size();
-    /* System.out.println("brickCount:"+brickCount); */
     currentBrickNumber = generator.nextInt(brickCount);
-    /* System.out.println("currentBrickNumber:"+currentBrickNumber); */
     brick = brickTypes.get(currentBrickNumber);
-
-		/* brick = new PlusBrick(); */
-		brick.setFalling(true);
-		brick.setXPos(40);
-		brick.setYPos(0);
-
-    /* brick = new ZBrick(); */
+    /* brick = brickTypes.get(0); // LBrick01 */
     brickOnGround = new ArrayList<>();
-		brick.setBrickOnGround(brickOnGround);
- 
+    brick.setBrickOnGround(brickOnGround);
+
+    initFullLinesTemplate();
+  }
+
+  private void initFullLinesTemplate(){
+    int numberHorizontal = getNumberOfBricksHorizontal();
+    int numberVertical = getNumberOfBricksVertical();
+    fullLinesTemplate = new ArrayList<>();
+    List<Pos> horizontal;
+    for(int j = 0; j < numberVertical; j++){
+      horizontal = new ArrayList<>();
+      for(int i = 0; i < numberHorizontal; i++){
+        horizontal.add(new Pos(i*brickSize,j*brickSize));
+      }
+      fullLinesTemplate.add(horizontal);
+    }
+  }
+
+  private int getNumberOfBricksHorizontal(){
+    return GamePanel.WIDTH / brickSize;
+  }
+
+  private int getNumberOfBricksVertical(){
+    return GamePanel.HEIGHT / brickSize;
   }
 	
 	public void update() {
    if(!brick.update()){
       brickOnGround.addAll(brick.getCurrentPosition());
+      checkAndEraseFullLines();
       currentBrickNumber = generator.nextInt(brickCount);
       brick = brickTypes.get(currentBrickNumber);
-      /* brick = new PlusBrick(); */
       System.out.println(brick.getClass().getName());
-      brick.setFalling(true);
-      brick.setXPos(40);
-      brick.setYPos(0);
+      brick.init();
       brick.setBrickOnGround(brickOnGround);
     }
   }
-	
+
 	public void draw(Graphics2D g) {
 		// clear screen
 		g.setColor(Color.WHITE);
@@ -106,6 +121,22 @@ public class Level1State extends GameState{
       g.drawLine(j,0,j,GamePanel.HEIGHT);
     }
 
+  }
+
+  private void checkAndEraseFullLines(){
+    for(List<Pos> horizontal : fullLinesTemplate){
+      if(brickOnGround.containsAll(horizontal)){
+        brickOnGround.removeAll(horizontal);
+        dropBricksBelowRemovedLine(horizontal.get(0).getY());
+      }
+    }
+  }
+
+  private void dropBricksBelowRemovedLine(int belowY){
+      List<Pos> aboveBricks = brickOnGround.stream().filter( p -> p.getY() < belowY).collect(toList());
+      brickOnGround.removeAll(aboveBricks);
+      List<Pos> aboveBricksDropped = aboveBricks.stream().map( p -> new Pos(p.getX(), p.getY() + brickSize)).collect(toList());
+      brickOnGround.addAll(aboveBricksDropped);
   }
 	
 	public void keyPressed(int k) {

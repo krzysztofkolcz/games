@@ -37,4 +37,8 @@ public class Pos{
 			}
 			return result;
 	}
+
+  public String toString(){
+    return "x:"+x+"; y:"+y;
+  }
 }

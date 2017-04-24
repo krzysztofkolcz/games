@@ -9,6 +9,29 @@ import java.util.List;
 
 public class SquareBrick01 extends Brick{
 
+  private int rotation;
+
+  private Pos[][] subPosRelToCenter = {
+      /* .. */
+      /* .. */
+   {new Pos(-1,-1), new Pos(-1,0),new Pos(0,-1),new Pos(0,0)},
+  };
+
+  @Override
+  public Pos[][] getSubPosRelToCenter(){
+    return subPosRelToCenter;
+  }
+
+  @Override
+  public int getCurrentRotation(){
+    return rotation;
+  }
+
+  @Override
+  public Pos[] getCurrentSubPosRelToCenter(){
+    return subPosRelToCenter[getCurrentRotation()];
+  }
+
   /* if brick should stop falling - touches ground or brick on the ground */
   public boolean shouldStopFalling(){
     return false;
@@ -19,6 +42,7 @@ public class SquareBrick01 extends Brick{
   }
 
   public void init(){
+    rotation = 0;
     super.init();
   }
 
@@ -26,17 +50,6 @@ public class SquareBrick01 extends Brick{
   }
 
   public void rotateRight(){
-  }
-
-  public List<Pos> getCurrentPosition(){
-    List<Pos> finalPos = new ArrayList<>();
-    for(int j = -1; j < 1; j++){
-      for(int i = -1; i < 1; i++){
-        Pos pos = new Pos(xpos+(i*brickSize),ypos+(j*brickSize));
-        finalPos.add(pos);
-      }
-    }
-    return finalPos;
   }
 
 }

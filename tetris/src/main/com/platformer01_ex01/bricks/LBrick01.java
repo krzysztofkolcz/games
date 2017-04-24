@@ -2,10 +2,8 @@ package com.platformer01_ex01.bricks;
 
 import java.awt.*;
 import com.platformer01_ex01.GamePanel;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.List;
+import java.util.*;
+import java.lang.Override;
 
 public class LBrick01 extends Brick{
 
@@ -14,7 +12,39 @@ public class LBrick01 extends Brick{
     return false;
   }
 
-  private int position;
+  private int rotation;
+
+  private Pos[][] subPosRelToCenter = {
+      /* . */
+      /* . */
+      /* .. */
+   {new Pos(-1,-2), new Pos(-1,-1),new Pos(-1,0),new Pos(0,0)},
+      /*   . */
+      /* ... */
+   {new Pos(-2,0), new Pos(-1,0),new Pos(0,0),new Pos(0,-1)},
+      /* .. */
+      /*  . */
+      /*  . */
+   {new Pos(-1,-1), new Pos(0,-1),new Pos(0,0),new Pos(0,1)},
+      /* ... */
+      /* .   */
+   {new Pos(-1,-1), new Pos(-1,0),new Pos(0,-1),new Pos(1,-1)}
+  };
+
+  @Override
+  public Pos[][] getSubPosRelToCenter(){
+    return subPosRelToCenter;
+  }
+
+  @Override
+  public int getCurrentRotation(){
+    return rotation;
+  }
+
+  @Override
+  public Pos[] getCurrentSubPosRelToCenter(){
+    return subPosRelToCenter[getCurrentRotation()];
+  }
 
   public LBrick01(){
     init();
@@ -22,18 +52,18 @@ public class LBrick01 extends Brick{
 
   public void init(){
     super.init();
-    position = 0;
+    rotation = 0;
   }
 
 
   public void rotateLeft(){
-    if(position==0){
-      position = 3;
+    if(rotation==0){
+      rotation= 3;
     }else{
-      position--;
+      rotation--;
     }
 
-    switch(position){
+    switch(rotation){
 
       /* . */
       /* . */
@@ -74,12 +104,12 @@ public class LBrick01 extends Brick{
   }
 
   public void rotateRight(){
-    if(position==3){
-      position = 0;
+    if(rotation==3){
+      rotation = 0;
     }else{
-      position++;
+      rotation++;
     }
-    switch(position){
+    switch(rotation){
 
       /* . */
       /* . */
@@ -116,72 +146,5 @@ public class LBrick01 extends Brick{
 
     }
     //TODO - check collision
-  }
-
-  public List<Pos> getCurrentPosition(){
-    List<Pos> finalPos = new ArrayList<>();
-    Pos pos;
-    switch(position){
-
-      /* . */
-      /* . */
-      /* .. */
-      case 0:
-        pos = new Pos(xpos-(brickSize), ypos-(2*brickSize));
-        finalPos.add(pos);
-        pos = new Pos(xpos-(brickSize), ypos-(brickSize));
-        finalPos.add(pos);
-        pos = new Pos(xpos-(brickSize), ypos);
-        finalPos.add(pos);
-        pos = new Pos(xpos, ypos);
-        finalPos.add(pos);
-        break;  
-
-      /*   . */
-      /* ... */
-      case 1: 
-        pos = new Pos(xpos-(2*brickSize), ypos);
-        finalPos.add(pos);
-        pos = new Pos(xpos-(brickSize), ypos);
-        finalPos.add(pos);
-        pos = new Pos(xpos, ypos);
-        finalPos.add(pos);
-        pos = new Pos(xpos, ypos-(brickSize));
-        finalPos.add(pos);
-
-        break;
-
-      /* .. */
-      /*  . */
-      /*  . */
-      case 2:
-        pos = new Pos(xpos-(brickSize), ypos-(brickSize));
-        finalPos.add(pos);
-        pos = new Pos(xpos, ypos-(brickSize));
-        finalPos.add(pos);
-        pos = new Pos(xpos, ypos);
-        finalPos.add(pos);
-        pos = new Pos(xpos, ypos+brickSize);
-        finalPos.add(pos);
-        
-        break;
-
-      /* ... */
-      /* .   */
-      case 3: 
-        pos = new Pos(xpos-(brickSize), ypos-(brickSize));
-        finalPos.add(pos);
-        pos = new Pos(xpos-(brickSize), ypos);
-        finalPos.add(pos);
-        pos = new Pos(xpos, ypos-(brickSize));
-        finalPos.add(pos);
-        pos = new Pos(xpos+brickSize, ypos-brickSize);
-        finalPos.add(pos);
-        break;
-
-      default:break;
-
-    }
-    return finalPos;
   }
 }

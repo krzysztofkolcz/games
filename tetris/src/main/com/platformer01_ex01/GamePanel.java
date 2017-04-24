@@ -20,7 +20,9 @@ public class GamePanel extends JPanel implements Runnable, KeyListener{
   public static final int FIX = 1;
 	/* public static final int WIDTH = 320 + FIX; */
 	/* public static final int HEIGHT = 240; */
-	public static final int WIDTH = 80 + FIX;
+	public static final int LINEWIDTH = 80 ;
+	public static final int WIDTH = LINEWIDTH + FIX;
+
 	public static final int WINDOWWIDTH = 120 + FIX;
 	public static final int HEIGHT = 240;
 	public static final int SCALE = 2;
