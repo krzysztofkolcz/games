@@ -217,7 +217,7 @@ public abstract class Brick{
 
 
 
-  public List<Pos> getCurrentPosition(){
+  public synchronized List<Pos> getCurrentPosition(){
     currentPositions = new ArrayList<Pos>();
     for(Pos p : getCurrentSubPosRelToCenter()){
       addCurrentPositions(xpos+(brickSize*p.getX()), ypos+(brickSize*p.getY()));
