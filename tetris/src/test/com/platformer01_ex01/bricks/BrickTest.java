@@ -29,7 +29,7 @@ public class BrickTest{
 					brickOnGround.add(new Pos(10,105));
 					brickOnGround.add(new Pos(15,105));
 
-					Brick brick = new LongBrick();
+					Brick brick = new LongBrick01();
 					brick.setFalling(true);
 					brick.setXPos(10);
 					brick.setYPos(95);

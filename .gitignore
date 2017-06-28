@@ -5,3 +5,4 @@ projectHibernate.iml
 *.class
 .class
 **/*.class
+3dgame/src/lib/*

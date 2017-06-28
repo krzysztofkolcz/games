@@ -56,4 +56,8 @@ TOOD - jak kompilować, jeżeli klasy są w pakiecie?
 
 
 #platformer01
+## mainmenu
 
+Wynika z tego, że javac nie ma możliwości kopiowania zasobów typu images (znajdujących się w katalogu resources) do targeta, trzeba ja przekopiować ręcznie, lub skorzystać z jakichś pluginów do mavena, anta, albo ustawić w IDE.
+
+#platformer01_ex01 - ćwiczenia z gier - tetris
