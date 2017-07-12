@@ -8,6 +8,8 @@ import static java.util.stream.Collectors.toList;
 
 public class Circle{
 
+	public static final int MAXSPEED = 60; /* 60px/sec - to oznacza, że na 1px na jedną klatkę - gdy klatki lecą bez opóźnień. */
+
   protected int radius;
 
   protected int xpos;
@@ -15,16 +17,24 @@ public class Circle{
 
   protected int xVector;
   protected int yVector;
+	private boolean moveRight;
+	private boolean moveLeft;
+	private boolean moveUp;
+	private boolean moveDown;
 
   public Circle(){
-    radius = 5;
+    radius = 15;
     xpos = 40;
     ypos = 40;
-    xVector = 1;
-    yVector = 1;
+    xVector = MAXSPEED/GamePanel.TARGET_FPS;
+    yVector = MAXSPEED/GamePanel.TARGET_FPS;
   }
 
   public boolean update(){
+		moveRight();
+		moveLeft();
+		moveUp();
+		moveDown();
     return true;
   }
 
@@ -62,12 +72,11 @@ public class Circle{
 
   public void draw(Graphics2D g){
     drawOutline(g);
-    drawCenterPoint(g);
+    /* drawCenterPoint(g); */
   }
 
   private void drawOutline(Graphics2D g){
-		g.setColor(Color.BLACK);
-    g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+		g.setColor(Color.GREEN);
     g.drawOval(xpos,ypos,radius,radius);
   }
 
@@ -77,37 +86,63 @@ public class Circle{
   }
   
   public void setMoveLeft(){
-    if(canMoveLeft()){
+		moveLeft = true; 
+  }
+
+  public void moveLeft(){
+    if(moveLeft && canMoveLeft()){
         xpos -= xVector;
+				moveLeft = false;
     }
   }
 
   public void setMoveRight(){
-    if(canMoveRight()){
-       xpos += xVector;
-    }
+		moveRight = true; 
   }
 
-  public void setMoveDown(){
-    if(canMoveDown()){
-        ypos += yVector;
+	public void moveRight(){
+    if(moveRight && canMoveRight()){
+			xpos += xVector;
+			moveRight = false;
     }
+	}
+
+  public void setMoveDown(){
+		moveDown = true;
   }
+
+	public void moveDown(){
+    if(moveDown && canMoveDown()){
+			ypos += yVector;
+			moveDown = false;
+    }
+	}
+
+  public void setMoveUp(){
+		moveUp = true;
+  }
+
+	public void moveUp(){
+    if(moveUp && canMoveUp()){
+			ypos -= yVector;
+			moveUp = false;
+    }
+	}
 
   public boolean canMoveDown(){
     return ypos < GamePanel.HEIGHT - radius;
   }
 
   public boolean canMoveUp(){
-    return ypos > radius; 
+    return ypos > 0; 
   }
 
   public boolean canMoveLeft(){
-    return xpos > radius;
+    return xpos > 0;
   }
 
   public boolean canMoveRight(){
-    return xpos < GamePanel.WINDOWWIDTH  - radius;
+    return xpos < GamePanel.WIDTH  - radius;
   }
 
 }

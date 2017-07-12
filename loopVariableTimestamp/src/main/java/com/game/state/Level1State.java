@@ -27,6 +27,9 @@ public class Level1State extends GameState{
 	public void draw(Graphics2D g) {
 		g.setColor(Color.WHITE);
 		g.fillRect(0, 0, GamePanel.WIDTH, GamePanel.HEIGHT);
+    /* System.out.println("Leve1State.draw()"); */
+    /* System.out.println(GamePanel.WIDTH); */
+    /* System.out.println(GamePanel.HEIGHT); */
     circle.draw(g);
 	}
 
@@ -37,6 +40,8 @@ public class Level1State extends GameState{
 		if(k == KeyEvent.VK_L) circle.setMoveRight();
 		if(k == KeyEvent.VK_DOWN) circle.setMoveDown();
 		if(k == KeyEvent.VK_J) circle.setMoveDown();
+		if(k == KeyEvent.VK_UP) circle.setMoveUp();
+		if(k == KeyEvent.VK_K) circle.setMoveUp();
   }
 	
 	public void keyReleased(int k) {

@@ -1,0 +1,3202 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building 3dgame 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-nativedependencies-plugin:0.0.6:copy (unpacknatives) @ 3dgame ---
+[INFO] Saving natives in /home/krzysztof/IdeaProjects/games/3dgame/target/natives
+[INFO] G:org.lwjgl.lwjgl - A:lwjgl-platform - C:natives-windows
+[info] Copying natives from lwjgl-platform-2.9.3-natives-windows.jar
+[info] Copying native - META-INF/
+[info] Copying native - META-INF/MANIFEST.MF
+[info] Copying native - OpenAL32.dll
+[info] Copying native - OpenAL64.dll
+[info] Copying native - lwjgl.dll
+[info] Copying native - lwjgl64.dll
+[INFO] G:org.lwjgl.lwjgl - A:lwjgl-platform - C:natives-linux
+[info] Copying natives from lwjgl-platform-2.9.3-natives-linux.jar
+[info] Copying native - META-INF/
+[info] Copying native - META-INF/MANIFEST.MF
+[info] Copying native - liblwjgl.so
+[info] Copying native - liblwjgl64.so
+[info] Copying native - libopenal.so
+[info] Copying native - libopenal64.so
+[INFO] G:org.lwjgl.lwjgl - A:lwjgl-platform - C:natives-osx
+[info] Copying natives from lwjgl-platform-2.9.3-natives-osx.jar
+[info] Copying native - META-INF/
+[info] Copying native - META-INF/MANIFEST.MF
+[info] Copying native - liblwjgl.dylib
+[info] Copying native - openal.dylib
+[INFO] G:net.java.jinput - A:jinput-platform - C:natives-linux
+[info] Copying natives from jinput-platform-2.0.5-natives-linux.jar
+[info] Copying native - libjinput-linux.so
+[info] Copying native - libjinput-linux64.so
+[INFO] G:net.java.jinput - A:jinput-platform - C:natives-windows
+[info] Copying natives from jinput-platform-2.0.5-natives-windows.jar
+[info] Copying native - jinput-dx8.dll
+[info] Copying native - jinput-dx8_64.dll
+[info] Copying native - jinput-raw.dll
+[info] Copying native - jinput-raw_64.dll
+[info] Copying native - jinput-wintab.dll
+[INFO] G:net.java.jinput - A:jinput-platform - C:natives-osx
+[info] Copying natives from jinput-platform-2.0.5-natives-osx.jar
+[info] Copying native - libjinput-osx.jnilib
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ 3dgame ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/krzysztof/IdeaProjects/games/3dgame/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ 3dgame ---
+[INFO] Compiling 1 source file to /home/krzysztof/IdeaProjects/games/3dgame/target/classes
+[INFO] 
+[INFO] --- exec-maven-plugin:1.4.0:java (default-cli) @ 3dgame ---
+frameTime:2.0E-4
+--------------------------------------------
+lastTime:13323935964946
+startTime:13323935966278
+passedTime:1332
+passedTime:1.332E-6
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.00000133200000000000
+frameCounter += passedTime
+frameCounter:1332
+While loop time (l):954
+While loop time (s):9.54E-7
+While loop count:0
+--------------------------------------------
+lastTime:13323935966278
+startTime:13323939212676
+passedTime:3246398
+passedTime:0.003246398
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.00324773000000000030
+frameCounter += passedTime
+frameCounter:3247730
+While loop time (l):64775
+While loop time (s):6.4775E-5
+While loop count:16
+render
+frames++
+frames:1
+--------------------------------------------
+lastTime:13323939212676
+startTime:13323960964241
+passedTime:21751565
+passedTime:0.021751565
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02179929500000000000
+frameCounter += passedTime
+frameCounter:24999295
+While loop time (l):144015
+While loop time (s):1.44015E-4
+While loop count:108
+render
+frames++
+frames:2
+--------------------------------------------
+lastTime:13323960964241
+startTime:13323982436946
+passedTime:21472705
+passedTime:0.021472705
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02167200000000002000
+frameCounter += passedTime
+frameCounter:46472000
+While loop time (l):160782
+While loop time (s):1.60782E-4
+While loop count:108
+render
+frames++
+frames:3
+--------------------------------------------
+lastTime:13323982436946
+startTime:13324004133720
+passedTime:21696774
+passedTime:0.021696774
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02176877400000004000
+frameCounter += passedTime
+frameCounter:68168774
+While loop time (l):206923
+While loop time (s):2.06923E-4
+While loop count:108
+render
+frames++
+frames:4
+--------------------------------------------
+lastTime:13324004133720
+startTime:13324025885556
+passedTime:21751836
+passedTime:0.021751836
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02192061000000006300
+frameCounter += passedTime
+frameCounter:89920610
+While loop time (l):118367
+While loop time (s):1.18367E-4
+While loop count:109
+render
+frames++
+frames:5
+--------------------------------------------
+lastTime:13324025885556
+startTime:13324047533591
+passedTime:21648035
+passedTime:0.021648035
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02176864500000008600
+frameCounter += passedTime
+frameCounter:111568645
+While loop time (l):111373
+While loop time (s):1.11373E-4
+While loop count:108
+render
+frames++
+frames:6
+--------------------------------------------
+lastTime:13324047533591
+startTime:13324069135237
+passedTime:21601646
+passedTime:0.021601646
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02177029100000010800
+frameCounter += passedTime
+frameCounter:133170291
+While loop time (l):56185
+While loop time (s):5.6185E-5
+While loop count:108
+render
+frames++
+frames:7
+--------------------------------------------
+lastTime:13324069135237
+startTime:13324090546857
+passedTime:21411620
+passedTime:0.02141162
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02158191100000013000
+frameCounter += passedTime
+frameCounter:154581911
+While loop time (l):38518
+While loop time (s):3.8518E-5
+While loop count:107
+render
+frames++
+frames:8
+--------------------------------------------
+lastTime:13324090546857
+startTime:13324111898789
+passedTime:21351932
+passedTime:0.021351932
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02153384300000015000
+frameCounter += passedTime
+frameCounter:175933843
+While loop time (l):53810
+While loop time (s):5.381E-5
+While loop count:107
+render
+frames++
+frames:9
+--------------------------------------------
+lastTime:13324111898789
+startTime:13324133726523
+passedTime:21827734
+passedTime:0.021827734
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02196157700000017300
+frameCounter += passedTime
+frameCounter:197761577
+While loop time (l):39153
+While loop time (s):3.9153E-5
+While loop count:109
+render
+frames++
+frames:10
+--------------------------------------------
+lastTime:13324133726523
+startTime:13324154928316
+passedTime:21201793
+passedTime:0.021201793
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02136337000000019700
+frameCounter += passedTime
+frameCounter:218963370
+While loop time (l):57751
+While loop time (s):5.7751E-5
+While loop count:106
+render
+frames++
+frames:11
+--------------------------------------------
+lastTime:13324154928316
+startTime:13324176160512
+passedTime:21232196
+passedTime:0.021232196
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02139556600000021600
+frameCounter += passedTime
+frameCounter:240195566
+While loop time (l):45835
+While loop time (s):4.5835E-5
+While loop count:106
+render
+frames++
+frames:12
+--------------------------------------------
+lastTime:13324176160512
+startTime:13324197460251
+passedTime:21299739
+passedTime:0.021299739
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02149530500000023500
+frameCounter += passedTime
+frameCounter:261495305
+While loop time (l):38047
+While loop time (s):3.8047E-5
+While loop count:107
+render
+frames++
+frames:13
+--------------------------------------------
+lastTime:13324197460251
+startTime:13324219019886
+passedTime:21559635
+passedTime:0.021559635
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02165494000000025400
+frameCounter += passedTime
+frameCounter:283054940
+While loop time (l):64797
+While loop time (s):6.4797E-5
+While loop count:108
+render
+frames++
+frames:14
+--------------------------------------------
+lastTime:13324219019886
+startTime:13324240509950
+passedTime:21490064
+passedTime:0.021490064
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02154500400000027400
+frameCounter += passedTime
+frameCounter:304545004
+While loop time (l):63692
+While loop time (s):6.3692E-5
+While loop count:107
+render
+frames++
+frames:15
+--------------------------------------------
+lastTime:13324240509950
+startTime:13324262035751
+passedTime:21525801
+passedTime:0.021525801
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02167080500000029600
+frameCounter += passedTime
+frameCounter:326070805
+While loop time (l):72433
+While loop time (s):7.2433E-5
+While loop count:108
+render
+frames++
+frames:16
+--------------------------------------------
+lastTime:13324262035751
+startTime:13324283297471
+passedTime:21261720
+passedTime:0.02126172
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02133252500000031700
+frameCounter += passedTime
+frameCounter:347332525
+While loop time (l):38176
+While loop time (s):3.8176E-5
+While loop count:106
+render
+frames++
+frames:17
+--------------------------------------------
+lastTime:13324283297471
+startTime:13324304352141
+passedTime:21054670
+passedTime:0.02105467
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02118719500000034000
+frameCounter += passedTime
+frameCounter:368387195
+While loop time (l):46128
+While loop time (s):4.6128E-5
+While loop count:105
+render
+frames++
+frames:18
+--------------------------------------------
+lastTime:13324304352141
+startTime:13324325473174
+passedTime:21121033
+passedTime:0.021121033
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02130822800000035600
+frameCounter += passedTime
+frameCounter:389508228
+While loop time (l):46710
+While loop time (s):4.671E-5
+While loop count:106
+render
+frames++
+frames:19
+--------------------------------------------
+lastTime:13324325473174
+startTime:13324346801580
+passedTime:21328406
+passedTime:0.021328406
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02143663400000037800
+frameCounter += passedTime
+frameCounter:410836634
+While loop time (l):49988
+While loop time (s):4.9988E-5
+While loop count:107
+render
+frames++
+frames:20
+--------------------------------------------
+lastTime:13324346801580
+startTime:13324367807610
+passedTime:21006030
+passedTime:0.02100603
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02104266400000039500
+frameCounter += passedTime
+frameCounter:431842664
+While loop time (l):37882
+While loop time (s):3.7882E-5
+While loop count:105
+render
+frames++
+frames:21
+--------------------------------------------
+lastTime:13324367807610
+startTime:13324388915982
+passedTime:21108372
+passedTime:0.021108372
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02115103600000041000
+frameCounter += passedTime
+frameCounter:452951036
+While loop time (l):46529
+While loop time (s):4.6529E-5
+While loop count:105
+render
+frames++
+frames:22
+--------------------------------------------
+lastTime:13324388915982
+startTime:13324410389810
+passedTime:21473828
+passedTime:0.021473828
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02162486400000043000
+frameCounter += passedTime
+frameCounter:474424864
+While loop time (l):47890
+While loop time (s):4.789E-5
+While loop count:108
+render
+frames++
+frames:23
+--------------------------------------------
+lastTime:13324410389810
+startTime:13324431464119
+passedTime:21074309
+passedTime:0.021074309
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02109917300000045000
+frameCounter += passedTime
+frameCounter:495499173
+While loop time (l):47587
+While loop time (s):4.7587E-5
+While loop count:105
+render
+frames++
+frames:24
+--------------------------------------------
+lastTime:13324431464119
+startTime:13324452537970
+passedTime:21073851
+passedTime:0.021073851
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02117302400000046700
+frameCounter += passedTime
+frameCounter:516573024
+While loop time (l):37787
+While loop time (s):3.7787E-5
+While loop count:105
+render
+frames++
+frames:25
+--------------------------------------------
+lastTime:13324452537970
+startTime:13324473711870
+passedTime:21173900
+passedTime:0.0211739
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02134692400000048500
+frameCounter += passedTime
+frameCounter:537746924
+While loop time (l):47161
+While loop time (s):4.7161E-5
+While loop count:106
+render
+frames++
+frames:26
+--------------------------------------------
+lastTime:13324473711870
+startTime:13324494986356
+passedTime:21274486
+passedTime:0.021274486
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02142141000000050500
+frameCounter += passedTime
+frameCounter:559021410
+While loop time (l):51442
+While loop time (s):5.1442E-5
+While loop count:107
+render
+frames++
+frames:27
+--------------------------------------------
+lastTime:13324494986356
+startTime:13324516441666
+passedTime:21455310
+passedTime:0.02145531
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02147672000000052000
+frameCounter += passedTime
+frameCounter:580476720
+While loop time (l):47074
+While loop time (s):4.7074E-5
+While loop count:107
+render
+frames++
+frames:28
+--------------------------------------------
+lastTime:13324516441666
+startTime:13324537639101
+passedTime:21197435
+passedTime:0.021197435
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02127415500000054000
+frameCounter += passedTime
+frameCounter:601674155
+While loop time (l):37890
+While loop time (s):3.789E-5
+While loop count:106
+render
+frames++
+frames:29
+--------------------------------------------
+lastTime:13324537639101
+startTime:13324558644563
+passedTime:21005462
+passedTime:0.021005462
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02107961700000055700
+frameCounter += passedTime
+frameCounter:622679617
+While loop time (l):49958
+While loop time (s):4.9958E-5
+While loop count:105
+render
+frames++
+frames:30
+--------------------------------------------
+lastTime:13324558644563
+startTime:13324579678349
+passedTime:21033786
+passedTime:0.021033786
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02111340300000057200
+frameCounter += passedTime
+frameCounter:643713403
+While loop time (l):37712
+While loop time (s):3.7712E-5
+While loop count:105
+render
+frames++
+frames:31
+--------------------------------------------
+lastTime:13324579678349
+startTime:13324600782025
+passedTime:21103676
+passedTime:0.021103676
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02121707900000059000
+frameCounter += passedTime
+frameCounter:664817079
+While loop time (l):41705
+While loop time (s):4.1705E-5
+While loop count:106
+render
+frames++
+frames:32
+--------------------------------------------
+lastTime:13324600782025
+startTime:13324621793316
+passedTime:21011291
+passedTime:0.021011291
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02102837000000060800
+frameCounter += passedTime
+frameCounter:685828370
+While loop time (l):47205
+While loop time (s):4.7205E-5
+While loop count:105
+render
+frames++
+frames:33
+--------------------------------------------
+lastTime:13324621793316
+startTime:13324644305963
+passedTime:22512647
+passedTime:0.022512647
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02254101700000062400
+frameCounter += passedTime
+frameCounter:708341017
+While loop time (l):54794
+While loop time (s):5.4794E-5
+While loop count:112
+render
+frames++
+frames:34
+--------------------------------------------
+lastTime:13324644305963
+startTime:13324665786383
+passedTime:21480420
+passedTime:0.02148042
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02162143700000065300
+frameCounter += passedTime
+frameCounter:729821437
+While loop time (l):39990
+While loop time (s):3.999E-5
+While loop count:108
+render
+frames++
+frames:35
+--------------------------------------------
+lastTime:13324665786383
+startTime:13324686988797
+passedTime:21202414
+passedTime:0.021202414
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02122385100000067000
+frameCounter += passedTime
+frameCounter:751023851
+While loop time (l):42186
+While loop time (s):4.2186E-5
+While loop count:106
+render
+frames++
+frames:36
+--------------------------------------------
+lastTime:13324686988797
+startTime:13324708207168
+passedTime:21218371
+passedTime:0.021218371
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02124222200000069000
+frameCounter += passedTime
+frameCounter:772242222
+While loop time (l):38556
+While loop time (s):3.8556E-5
+While loop count:106
+render
+frames++
+frames:37
+--------------------------------------------
+lastTime:13324708207168
+startTime:13324729297889
+passedTime:21090721
+passedTime:0.021090721
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02113294300000070600
+frameCounter += passedTime
+frameCounter:793332943
+While loop time (l):38639
+While loop time (s):3.8639E-5
+While loop count:105
+render
+frames++
+frames:38
+--------------------------------------------
+lastTime:13324729297889
+startTime:13324750917019
+passedTime:21619130
+passedTime:0.02161913
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02175207300000072500
+frameCounter += passedTime
+frameCounter:814952073
+While loop time (l):50921
+While loop time (s):5.0921E-5
+While loop count:108
+render
+frames++
+frames:39
+--------------------------------------------
+lastTime:13324750917019
+startTime:13324772121177
+passedTime:21204158
+passedTime:0.021204158
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02135623100000075000
+frameCounter += passedTime
+frameCounter:836156231
+While loop time (l):46132
+While loop time (s):4.6132E-5
+While loop count:106
+render
+frames++
+frames:40
+--------------------------------------------
+lastTime:13324772121177
+startTime:13324793218589
+passedTime:21097412
+passedTime:0.021097412
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02125364300000077000
+frameCounter += passedTime
+frameCounter:857253643
+While loop time (l):38742
+While loop time (s):3.8742E-5
+While loop count:106
+render
+frames++
+frames:41
+--------------------------------------------
+lastTime:13324793218589
+startTime:13324814388902
+passedTime:21170313
+passedTime:0.021170313
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02122395600000078600
+frameCounter += passedTime
+frameCounter:878423956
+While loop time (l):46700
+While loop time (s):4.67E-5
+While loop count:106
+render
+frames++
+frames:42
+--------------------------------------------
+lastTime:13324814388902
+startTime:13324835574641
+passedTime:21185739
+passedTime:0.021185739
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02120969500000080200
+frameCounter += passedTime
+frameCounter:899609695
+While loop time (l):42075
+While loop time (s):4.2075E-5
+While loop count:106
+render
+frames++
+frames:43
+--------------------------------------------
+lastTime:13324835574641
+startTime:13324857766640
+passedTime:22191999
+passedTime:0.022191999
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02220169400000082000
+frameCounter += passedTime
+frameCounter:921801694
+While loop time (l):35219
+While loop time (s):3.5219E-5
+While loop count:111
+render
+frames++
+frames:44
+--------------------------------------------
+lastTime:13324857766640
+startTime:13324879002807
+passedTime:21236167
+passedTime:0.021236167
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02123786100000084300
+frameCounter += passedTime
+frameCounter:943037861
+While loop time (l):46777
+While loop time (s):4.6777E-5
+While loop count:106
+render
+frames++
+frames:45
+--------------------------------------------
+lastTime:13324879002807
+startTime:13324900112142
+passedTime:21109335
+passedTime:0.021109335
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02114719600000086000
+frameCounter += passedTime
+frameCounter:964147196
+While loop time (l):45978
+While loop time (s):4.5978E-5
+While loop count:105
+render
+frames++
+frames:46
+--------------------------------------------
+lastTime:13324900112142
+startTime:13324921185090
+passedTime:21072948
+passedTime:0.021072948
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02122014400000088000
+frameCounter += passedTime
+frameCounter:985220144
+While loop time (l):41616
+While loop time (s):4.1616E-5
+While loop count:106
+render
+frames++
+frames:47
+--------------------------------------------
+lastTime:13324921185090
+startTime:13324942250075
+passedTime:21064985
+passedTime:0.021064985
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02108512900000090000
+frameCounter += passedTime
+frameCounter:1006285129
+frameCounter >= Time.SECOND
+frames:47
+While loop time (l):83269
+While loop time (s):8.3269E-5
+While loop count:105
+render
+frames++
+frames:1
+--------------------------------------------
+lastTime:13324942250075
+startTime:13324963391838
+passedTime:21141763
+passedTime:0.021141763
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02122689200000091700
+frameCounter += passedTime
+frameCounter:21141763
+While loop time (l):58229
+While loop time (s):5.8229E-5
+While loop count:106
+render
+frames++
+frames:2
+--------------------------------------------
+lastTime:13324963391838
+startTime:13324984590613
+passedTime:21198775
+passedTime:0.021198775
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02122566700000093300
+frameCounter += passedTime
+frameCounter:42340538
+While loop time (l):38807
+While loop time (s):3.8807E-5
+While loop count:106
+render
+frames++
+frames:3
+--------------------------------------------
+lastTime:13324984590613
+startTime:13325005727056
+passedTime:21136443
+passedTime:0.021136443
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02116211000000095200
+frameCounter += passedTime
+frameCounter:63476981
+While loop time (l):50295
+While loop time (s):5.0295E-5
+While loop count:105
+render
+frames++
+frames:4
+--------------------------------------------
+lastTime:13325005727056
+startTime:13325027093006
+passedTime:21365950
+passedTime:0.02136595
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02152806000000097300
+frameCounter += passedTime
+frameCounter:84842931
+While loop time (l):29576
+While loop time (s):2.9576E-5
+While loop count:107
+render
+frames++
+frames:5
+--------------------------------------------
+lastTime:13325027093006
+startTime:13325048268849
+passedTime:21175843
+passedTime:0.021175843
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02130390300000099500
+frameCounter += passedTime
+frameCounter:106018774
+While loop time (l):65468
+While loop time (s):6.5468E-5
+While loop count:106
+render
+frames++
+frames:6
+--------------------------------------------
+lastTime:13325048268849
+startTime:13325069494552
+passedTime:21225703
+passedTime:0.021225703
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02132960600000101000
+frameCounter += passedTime
+frameCounter:127244477
+While loop time (l):39176
+While loop time (s):3.9176E-5
+While loop count:106
+render
+frames++
+frames:7
+--------------------------------------------
+lastTime:13325069494552
+startTime:13325090630230
+passedTime:21135678
+passedTime:0.021135678
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02126528400000103300
+frameCounter += passedTime
+frameCounter:148380155
+While loop time (l):34963
+While loop time (s):3.4963E-5
+While loop count:106
+render
+frames++
+frames:8
+--------------------------------------------
+lastTime:13325090630230
+startTime:13325111604499
+passedTime:20974269
+passedTime:0.020974269
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02103955300000105000
+frameCounter += passedTime
+frameCounter:169354424
+While loop time (l):34689
+While loop time (s):3.4689E-5
+While loop count:105
+render
+frames++
+frames:9
+--------------------------------------------
+lastTime:13325111604499
+startTime:13325132603047
+passedTime:20998548
+passedTime:0.020998548
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02103810100000106500
+frameCounter += passedTime
+frameCounter:190352972
+While loop time (l):38832
+While loop time (s):3.8832E-5
+While loop count:105
+render
+frames++
+frames:10
+--------------------------------------------
+lastTime:13325132603047
+startTime:13325153739291
+passedTime:21136244
+passedTime:0.021136244
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02117434500000108000
+frameCounter += passedTime
+frameCounter:211489216
+While loop time (l):45822
+While loop time (s):4.5822E-5
+While loop count:105
+render
+frames++
+frames:11
+--------------------------------------------
+lastTime:13325153739291
+startTime:13325174724323
+passedTime:20985032
+passedTime:0.020985032
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02115937700000110000
+frameCounter += passedTime
+frameCounter:232474248
+While loop time (l):34406
+While loop time (s):3.4406E-5
+While loop count:105
+render
+frames++
+frames:12
+--------------------------------------------
+lastTime:13325174724323
+startTime:13325195586252
+passedTime:20861929
+passedTime:0.020861929
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02102130600000112000
+frameCounter += passedTime
+frameCounter:253336177
+While loop time (l):34659
+While loop time (s):3.4659E-5
+While loop count:105
+render
+frames++
+frames:13
+--------------------------------------------
+lastTime:13325195586252
+startTime:13325216622216
+passedTime:21035964
+passedTime:0.021035964
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02105727000000113700
+frameCounter += passedTime
+frameCounter:274372141
+While loop time (l):41911
+While loop time (s):4.1911E-5
+While loop count:105
+render
+frames++
+frames:14
+--------------------------------------------
+lastTime:13325216622216
+startTime:13325237590239
+passedTime:20968023
+passedTime:0.020968023
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02102529300000115200
+frameCounter += passedTime
+frameCounter:295340164
+While loop time (l):41902
+While loop time (s):4.1902E-5
+While loop count:105
+render
+frames++
+frames:15
+--------------------------------------------
+lastTime:13325237590239
+startTime:13325258968650
+passedTime:21378411
+passedTime:0.021378411
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02140370400000117000
+frameCounter += passedTime
+frameCounter:316718575
+While loop time (l):46382
+While loop time (s):4.6382E-5
+While loop count:107
+render
+frames++
+frames:16
+--------------------------------------------
+lastTime:13325258968650
+startTime:13325280407638
+passedTime:21438988
+passedTime:0.021438988
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02144269200000118600
+frameCounter += passedTime
+frameCounter:338157563
+While loop time (l):35687
+While loop time (s):3.5687E-5
+While loop count:107
+render
+frames++
+frames:17
+--------------------------------------------
+lastTime:13325280407638
+startTime:13325301394345
+passedTime:20986707
+passedTime:0.020986707
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02102939900000120500
+frameCounter += passedTime
+frameCounter:359144270
+While loop time (l):34740
+While loop time (s):3.474E-5
+While loop count:105
+render
+frames++
+frames:18
+--------------------------------------------
+lastTime:13325301394345
+startTime:13325322549369
+passedTime:21155024
+passedTime:0.021155024
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02118442300000122200
+frameCounter += passedTime
+frameCounter:380299294
+While loop time (l):42994
+While loop time (s):4.2994E-5
+While loop count:105
+render
+frames++
+frames:19
+--------------------------------------------
+lastTime:13325322549369
+startTime:13325343728485
+passedTime:21179116
+passedTime:0.021179116
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02136353900000124000
+frameCounter += passedTime
+frameCounter:401478410
+While loop time (l):39224
+While loop time (s):3.9224E-5
+While loop count:106
+render
+frames++
+frames:20
+--------------------------------------------
+lastTime:13325343728485
+startTime:13325364905015
+passedTime:21176530
+passedTime:0.02117653
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02134006900000126000
+frameCounter += passedTime
+frameCounter:422654940
+While loop time (l):59195
+While loop time (s):5.9195E-5
+While loop count:106
+render
+frames++
+frames:21
+--------------------------------------------
+lastTime:13325364905015
+startTime:13325386104751
+passedTime:21199736
+passedTime:0.021199736
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02133980500000128000
+frameCounter += passedTime
+frameCounter:443854676
+While loop time (l):35581
+While loop time (s):3.5581E-5
+While loop count:106
+render
+frames++
+frames:22
+--------------------------------------------
+lastTime:13325386104751
+startTime:13325407221577
+passedTime:21116826
+passedTime:0.021116826
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02125663100000130300
+frameCounter += passedTime
+frameCounter:464971502
+While loop time (l):35524
+While loop time (s):3.5524E-5
+While loop count:106
+render
+frames++
+frames:23
+--------------------------------------------
+lastTime:13325407221577
+startTime:13325428419935
+passedTime:21198358
+passedTime:0.021198358
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02125498900000132000
+frameCounter += passedTime
+frameCounter:486169860
+While loop time (l):43188
+While loop time (s):4.3188E-5
+While loop count:106
+render
+frames++
+frames:24
+--------------------------------------------
+lastTime:13325428419935
+startTime:13325449696030
+passedTime:21276095
+passedTime:0.021276095
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02133108400000133600
+frameCounter += passedTime
+frameCounter:507445955
+While loop time (l):38938
+While loop time (s):3.8938E-5
+While loop count:106
+render
+frames++
+frames:25
+--------------------------------------------
+lastTime:13325449696030
+startTime:13325471024806
+passedTime:21328776
+passedTime:0.021328776
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02145986000000135700
+frameCounter += passedTime
+frameCounter:528774731
+While loop time (l):44739
+While loop time (s):4.4739E-5
+While loop count:107
+render
+frames++
+frames:26
+--------------------------------------------
+lastTime:13325471024806
+startTime:13325492259908
+passedTime:21235102
+passedTime:0.021235102
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02129496200000137500
+frameCounter += passedTime
+frameCounter:550009833
+While loop time (l):35564
+While loop time (s):3.5564E-5
+While loop count:106
+render
+frames++
+frames:27
+--------------------------------------------
+lastTime:13325492259908
+startTime:13325513391919
+passedTime:21132011
+passedTime:0.021132011
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02122697300000139000
+frameCounter += passedTime
+frameCounter:571141844
+While loop time (l):42998
+While loop time (s):4.2998E-5
+While loop count:106
+render
+frames++
+frames:28
+--------------------------------------------
+lastTime:13325513391919
+startTime:13325534539144
+passedTime:21147225
+passedTime:0.021147225
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02117419800000140700
+frameCounter += passedTime
+frameCounter:592289069
+While loop time (l):34892
+While loop time (s):3.4892E-5
+While loop count:105
+render
+frames++
+frames:29
+--------------------------------------------
+lastTime:13325534539144
+startTime:13325555563947
+passedTime:21024803
+passedTime:0.021024803
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02119900100000142800
+frameCounter += passedTime
+frameCounter:613313872
+While loop time (l):34499
+While loop time (s):3.4499E-5
+While loop count:105
+render
+frames++
+frames:30
+--------------------------------------------
+lastTime:13325555563947
+startTime:13325576573367
+passedTime:21009420
+passedTime:0.02100942
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02120842100000144500
+frameCounter += passedTime
+frameCounter:634323292
+While loop time (l):38501
+While loop time (s):3.8501E-5
+While loop count:106
+render
+frames++
+frames:31
+--------------------------------------------
+lastTime:13325576573367
+startTime:13325597745007
+passedTime:21171640
+passedTime:0.02117164
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02118006100000146000
+frameCounter += passedTime
+frameCounter:655494932
+While loop time (l):43018
+While loop time (s):4.3018E-5
+While loop count:105
+render
+frames++
+frames:32
+--------------------------------------------
+lastTime:13325597745007
+startTime:13325619201997
+passedTime:21456990
+passedTime:0.02145699
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02163705100000147500
+frameCounter += passedTime
+frameCounter:676951922
+While loop time (l):38920
+While loop time (s):3.892E-5
+While loop count:108
+render
+frames++
+frames:33
+--------------------------------------------
+lastTime:13325619201997
+startTime:13325640172907
+passedTime:20970910
+passedTime:0.02097091
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02100796100000149400
+frameCounter += passedTime
+frameCounter:697922832
+While loop time (l):42640
+While loop time (s):4.264E-5
+While loop count:105
+render
+frames++
+frames:34
+--------------------------------------------
+lastTime:13325640172907
+startTime:13325662045000
+passedTime:21872093
+passedTime:0.021872093
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02188005400000151000
+frameCounter += passedTime
+frameCounter:719794925
+While loop time (l):47317
+While loop time (s):4.7317E-5
+While loop count:109
+render
+frames++
+frames:35
+--------------------------------------------
+lastTime:13325662045000
+startTime:13325683296408
+passedTime:21251408
+passedTime:0.021251408
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02133146200000153000
+frameCounter += passedTime
+frameCounter:741046333
+While loop time (l):46314
+While loop time (s):4.6314E-5
+While loop count:106
+render
+frames++
+frames:36
+--------------------------------------------
+lastTime:13325683296408
+startTime:13325704457101
+passedTime:21160693
+passedTime:0.021160693
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02129215500000155000
+frameCounter += passedTime
+frameCounter:762207026
+While loop time (l):60449
+While loop time (s):6.0449E-5
+While loop count:106
+render
+frames++
+frames:37
+--------------------------------------------
+lastTime:13325704457101
+startTime:13325725661187
+passedTime:21204086
+passedTime:0.021204086
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02129624100000157000
+frameCounter += passedTime
+frameCounter:783411112
+While loop time (l):44133
+While loop time (s):4.4133E-5
+While loop count:106
+render
+frames++
+frames:38
+--------------------------------------------
+lastTime:13325725661187
+startTime:13325746772036
+passedTime:21110849
+passedTime:0.021110849
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02120709000000158700
+frameCounter += passedTime
+frameCounter:804521961
+While loop time (l):34514
+While loop time (s):3.4514E-5
+While loop count:106
+render
+frames++
+frames:39
+--------------------------------------------
+lastTime:13325746772036
+startTime:13325767616706
+passedTime:20844670
+passedTime:0.02084467
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02085176000000160300
+frameCounter += passedTime
+frameCounter:825366631
+While loop time (l):42173
+While loop time (s):4.2173E-5
+While loop count:104
+render
+frames++
+frames:40
+--------------------------------------------
+lastTime:13325767616706
+startTime:13325788569510
+passedTime:20952804
+passedTime:0.020952804
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02100456400000161700
+frameCounter += passedTime
+frameCounter:846319435
+While loop time (l):38069
+While loop time (s):3.8069E-5
+While loop count:105
+render
+frames++
+frames:41
+--------------------------------------------
+lastTime:13325788569510
+startTime:13325809497275
+passedTime:20927765
+passedTime:0.020927765
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02093232900000163400
+frameCounter += passedTime
+frameCounter:867247200
+While loop time (l):34213
+While loop time (s):3.4213E-5
+While loop count:104
+render
+frames++
+frames:42
+--------------------------------------------
+lastTime:13325809497275
+startTime:13325830479439
+passedTime:20982164
+passedTime:0.020982164
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02111449300000165300
+frameCounter += passedTime
+frameCounter:888229364
+While loop time (l):34742
+While loop time (s):3.4742E-5
+While loop count:105
+render
+frames++
+frames:43
+--------------------------------------------
+lastTime:13325830479439
+startTime:13325851523646
+passedTime:21044207
+passedTime:0.021044207
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02115870000000167000
+frameCounter += passedTime
+frameCounter:909273571
+While loop time (l):37585
+While loop time (s):3.7585E-5
+While loop count:105
+render
+frames++
+frames:44
+--------------------------------------------
+lastTime:13325851523646
+startTime:13325872538799
+passedTime:21015153
+passedTime:0.021015153
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02117385300000169300
+frameCounter += passedTime
+frameCounter:930288724
+While loop time (l):42153
+While loop time (s):4.2153E-5
+While loop count:105
+render
+frames++
+frames:45
+--------------------------------------------
+lastTime:13325872538799
+startTime:13325893504024
+passedTime:20965225
+passedTime:0.020965225
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02113907800000171300
+frameCounter += passedTime
+frameCounter:951253949
+While loop time (l):37696
+While loop time (s):3.7696E-5
+While loop count:105
+render
+frames++
+frames:46
+--------------------------------------------
+lastTime:13325893504024
+startTime:13325914383810
+passedTime:20879786
+passedTime:0.020879786
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02101886400000173300
+frameCounter += passedTime
+frameCounter:972133735
+While loop time (l):37531
+While loop time (s):3.7531E-5
+While loop count:105
+render
+frames++
+frames:47
+--------------------------------------------
+lastTime:13325914383810
+startTime:13325935202586
+passedTime:20818776
+passedTime:0.020818776
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02083764000000175000
+frameCounter += passedTime
+frameCounter:992952511
+While loop time (l):34052
+While loop time (s):3.4052E-5
+While loop count:104
+render
+frames++
+frames:48
+--------------------------------------------
+lastTime:13325935202586
+startTime:13325956209007
+passedTime:21006421
+passedTime:0.021006421
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02104406100000176500
+frameCounter += passedTime
+frameCounter:1013958932
+frameCounter >= Time.SECOND
+frames:48
+While loop time (l):70944
+While loop time (s):7.0944E-5
+While loop count:105
+render
+frames++
+frames:1
+--------------------------------------------
+lastTime:13325956209007
+startTime:13325977128360
+passedTime:20919353
+passedTime:0.020919353
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02096341400000178300
+frameCounter += passedTime
+frameCounter:20919353
+While loop time (l):45163
+While loop time (s):4.5163E-5
+While loop count:104
+render
+frames++
+frames:2
+--------------------------------------------
+lastTime:13325977128360
+startTime:13325997927402
+passedTime:20799042
+passedTime:0.020799042
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02096245600000180000
+frameCounter += passedTime
+frameCounter:41718395
+While loop time (l):34157
+While loop time (s):3.4157E-5
+While loop count:104
+render
+frames++
+frames:3
+--------------------------------------------
+lastTime:13325997927402
+startTime:13326019106930
+passedTime:21179528
+passedTime:0.021179528
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02134198400000182000
+frameCounter += passedTime
+frameCounter:62897923
+While loop time (l):38706
+While loop time (s):3.8706E-5
+While loop count:106
+render
+frames++
+frames:4
+--------------------------------------------
+lastTime:13326019106930
+startTime:13326040191550
+passedTime:21084620
+passedTime:0.02108462
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02122660400000184000
+frameCounter += passedTime
+frameCounter:83982543
+While loop time (l):34990
+While loop time (s):3.499E-5
+While loop count:106
+render
+frames++
+frames:5
+--------------------------------------------
+lastTime:13326040191550
+startTime:13326061442833
+passedTime:21251283
+passedTime:0.021251283
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02127788700000185500
+frameCounter += passedTime
+frameCounter:105233826
+While loop time (l):38514
+While loop time (s):3.8514E-5
+While loop count:106
+render
+frames++
+frames:6
+--------------------------------------------
+lastTime:13326061442833
+startTime:13326082517271
+passedTime:21074438
+passedTime:0.021074438
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02115232500000187300
+frameCounter += passedTime
+frameCounter:126308264
+While loop time (l):37333
+While loop time (s):3.7333E-5
+While loop count:105
+render
+frames++
+frames:7
+--------------------------------------------
+lastTime:13326082517271
+startTime:13326103421947
+passedTime:20904676
+passedTime:0.020904676
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02105700100000189300
+frameCounter += passedTime
+frameCounter:147212940
+While loop time (l):33662
+While loop time (s):3.3662E-5
+While loop count:105
+render
+frames++
+frames:8
+--------------------------------------------
+lastTime:13326103421947
+startTime:13326124534227
+passedTime:21112280
+passedTime:0.02111228
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02116928100000191000
+frameCounter += passedTime
+frameCounter:168325220
+While loop time (l):34890
+While loop time (s):3.489E-5
+While loop count:105
+render
+frames++
+frames:9
+--------------------------------------------
+lastTime:13326124534227
+startTime:13326145706529
+passedTime:21172302
+passedTime:0.021172302
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02134158300000193000
+frameCounter += passedTime
+frameCounter:189497522
+While loop time (l):34847
+While loop time (s):3.4847E-5
+While loop count:106
+render
+frames++
+frames:10
+--------------------------------------------
+lastTime:13326145706529
+startTime:13326166650066
+passedTime:20943537
+passedTime:0.020943537
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02108512000000195200
+frameCounter += passedTime
+frameCounter:210441059
+While loop time (l):34032
+While loop time (s):3.4032E-5
+While loop count:105
+render
+frames++
+frames:11
+--------------------------------------------
+lastTime:13326166650066
+startTime:13326187549110
+passedTime:20899044
+passedTime:0.020899044
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02098416400000196700
+frameCounter += passedTime
+frameCounter:231340103
+While loop time (l):40960
+While loop time (s):4.096E-5
+While loop count:104
+render
+frames++
+frames:12
+--------------------------------------------
+lastTime:13326187549110
+startTime:13326208704314
+passedTime:21155204
+passedTime:0.021155204
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02133936800000198200
+frameCounter += passedTime
+frameCounter:252495307
+While loop time (l):43025
+While loop time (s):4.3025E-5
+While loop count:106
+render
+frames++
+frames:13
+--------------------------------------------
+lastTime:13326208704314
+startTime:13326229858347
+passedTime:21154033
+passedTime:0.021154033
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02129340100000200200
+frameCounter += passedTime
+frameCounter:273649340
+While loop time (l):41915
+While loop time (s):4.1915E-5
+While loop count:106
+render
+frames++
+frames:14
+--------------------------------------------
+lastTime:13326229858347
+startTime:13326251001716
+passedTime:21143369
+passedTime:0.021143369
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02123677000000201800
+frameCounter += passedTime
+frameCounter:294792709
+While loop time (l):41748
+While loop time (s):4.1748E-5
+While loop count:106
+render
+frames++
+frames:15
+--------------------------------------------
+lastTime:13326251001716
+startTime:13326271972431
+passedTime:20970715
+passedTime:0.020970715
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02100748500000203600
+frameCounter += passedTime
+frameCounter:315763424
+While loop time (l):35035
+While loop time (s):3.5035E-5
+While loop count:105
+render
+frames++
+frames:16
+--------------------------------------------
+lastTime:13326271972431
+startTime:13326293078058
+passedTime:21105627
+passedTime:0.021105627
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02111311200000205000
+frameCounter += passedTime
+frameCounter:336869051
+While loop time (l):37624
+While loop time (s):3.7624E-5
+While loop count:105
+render
+frames++
+frames:17
+--------------------------------------------
+lastTime:13326293078058
+startTime:13326314075478
+passedTime:20997420
+passedTime:0.02099742
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02111053200000207000
+frameCounter += passedTime
+frameCounter:357866471
+While loop time (l):41577
+While loop time (s):4.1577E-5
+While loop count:105
+render
+frames++
+frames:18
+--------------------------------------------
+lastTime:13326314075478
+startTime:13326335222237
+passedTime:21146759
+passedTime:0.021146759
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02125729100000209000
+frameCounter += passedTime
+frameCounter:379013230
+While loop time (l):35180
+While loop time (s):3.518E-5
+While loop count:106
+render
+frames++
+frames:19
+--------------------------------------------
+lastTime:13326335222237
+startTime:13326356433328
+passedTime:21211091
+passedTime:0.021211091
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02126838200000211000
+frameCounter += passedTime
+frameCounter:400224321
+While loop time (l):40361
+While loop time (s):4.0361E-5
+While loop count:106
+render
+frames++
+frames:20
+--------------------------------------------
+lastTime:13326356433328
+startTime:13326377739372
+passedTime:21306044
+passedTime:0.021306044
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02137442600000212500
+frameCounter += passedTime
+frameCounter:421530365
+While loop time (l):44875
+While loop time (s):4.4875E-5
+While loop count:106
+render
+frames++
+frames:21
+--------------------------------------------
+lastTime:13326377739372
+startTime:13326398785218
+passedTime:21045846
+passedTime:0.021045846
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02122027200000214600
+frameCounter += passedTime
+frameCounter:442576211
+While loop time (l):34747
+While loop time (s):3.4747E-5
+While loop count:106
+render
+frames++
+frames:22
+--------------------------------------------
+lastTime:13326398785218
+startTime:13326419751118
+passedTime:20965900
+passedTime:0.0209659
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02098617200000216200
+frameCounter += passedTime
+frameCounter:463542111
+While loop time (l):48448
+While loop time (s):4.8448E-5
+While loop count:104
+render
+frames++
+frames:23
+--------------------------------------------
+lastTime:13326419751118
+startTime:13326440770895
+passedTime:21019777
+passedTime:0.021019777
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02120594900000217700
+frameCounter += passedTime
+frameCounter:484561888
+While loop time (l):34331
+While loop time (s):3.4331E-5
+While loop count:106
+render
+frames++
+frames:24
+--------------------------------------------
+lastTime:13326440770895
+startTime:13326461765465
+passedTime:20994570
+passedTime:0.02099457
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02100051900000219500
+frameCounter += passedTime
+frameCounter:505556458
+While loop time (l):38118
+While loop time (s):3.8118E-5
+While loop count:105
+render
+frames++
+frames:25
+--------------------------------------------
+lastTime:13326461765465
+startTime:13326482914273
+passedTime:21148808
+passedTime:0.021148808
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02114932700000221300
+frameCounter += passedTime
+frameCounter:526705266
+While loop time (l):35020
+While loop time (s):3.502E-5
+While loop count:105
+render
+frames++
+frames:26
+--------------------------------------------
+lastTime:13326482914273
+startTime:13326504089084
+passedTime:21174811
+passedTime:0.021174811
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02132413800000223400
+frameCounter += passedTime
+frameCounter:547880077
+While loop time (l):35343
+While loop time (s):3.5343E-5
+While loop count:106
+render
+frames++
+frames:27
+--------------------------------------------
+lastTime:13326504089084
+startTime:13326525156573
+passedTime:21067489
+passedTime:0.021067489
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02119162700000225300
+frameCounter += passedTime
+frameCounter:568947566
+While loop time (l):41707
+While loop time (s):4.1707E-5
+While loop count:105
+render
+frames++
+frames:28
+--------------------------------------------
+lastTime:13326525156573
+startTime:13326546268779
+passedTime:21112206
+passedTime:0.021112206
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02130383300000227000
+frameCounter += passedTime
+frameCounter:590059772
+While loop time (l):42239
+While loop time (s):4.2239E-5
+While loop count:106
+render
+frames++
+frames:29
+--------------------------------------------
+lastTime:13326546268779
+startTime:13326567218702
+passedTime:20949923
+passedTime:0.020949923
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02105375600000228600
+frameCounter += passedTime
+frameCounter:611009695
+While loop time (l):33983
+While loop time (s):3.3983E-5
+While loop count:105
+render
+frames++
+frames:30
+--------------------------------------------
+lastTime:13326567218702
+startTime:13326588145750
+passedTime:20927048
+passedTime:0.020927048
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02098080400000230200
+frameCounter += passedTime
+frameCounter:631936743
+While loop time (l):43681
+While loop time (s):4.3681E-5
+While loop count:104
+render
+frames++
+frames:31
+--------------------------------------------
+lastTime:13326588145750
+startTime:13326609295058
+passedTime:21149308
+passedTime:0.021149308
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02133011200000231600
+frameCounter += passedTime
+frameCounter:653086051
+While loop time (l):32932
+While loop time (s):3.2932E-5
+While loop count:106
+render
+frames++
+frames:32
+--------------------------------------------
+lastTime:13326609295058
+startTime:13326630592202
+passedTime:21297144
+passedTime:0.021297144
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02142725600000233700
+frameCounter += passedTime
+frameCounter:674383195
+While loop time (l):20511
+While loop time (s):2.0511E-5
+While loop count:107
+render
+frames++
+frames:33
+--------------------------------------------
+lastTime:13326630592202
+startTime:13326651577536
+passedTime:20985334
+passedTime:0.020985334
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02101259000000235700
+frameCounter += passedTime
+frameCounter:695368529
+While loop time (l):35008
+While loop time (s):3.5008E-5
+While loop count:105
+render
+frames++
+frames:34
+--------------------------------------------
+lastTime:13326651577536
+startTime:13326672602067
+passedTime:21024531
+passedTime:0.021024531
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02103712100000237200
+frameCounter += passedTime
+frameCounter:716393060
+While loop time (l):34775
+While loop time (s):3.4775E-5
+While loop count:105
+render
+frames++
+frames:35
+--------------------------------------------
+lastTime:13326672602067
+startTime:13326693563274
+passedTime:20961207
+passedTime:0.020961207
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02099832800000238700
+frameCounter += passedTime
+frameCounter:737354267
+While loop time (l):33684
+While loop time (s):3.3684E-5
+While loop count:104
+render
+frames++
+frames:36
+--------------------------------------------
+lastTime:13326693563274
+startTime:13326714546520
+passedTime:20983246
+passedTime:0.020983246
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02118157400000240200
+frameCounter += passedTime
+frameCounter:758337513
+While loop time (l):45036
+While loop time (s):4.5036E-5
+While loop count:105
+render
+frames++
+frames:37
+--------------------------------------------
+lastTime:13326714546520
+startTime:13326735625514
+passedTime:21078994
+passedTime:0.021078994
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02126056800000242000
+frameCounter += passedTime
+frameCounter:779416507
+While loop time (l):35146
+While loop time (s):3.5146E-5
+While loop count:106
+render
+frames++
+frames:38
+--------------------------------------------
+lastTime:13326735625514
+startTime:13326756776063
+passedTime:21150549
+passedTime:0.021150549
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02121111700000243700
+frameCounter += passedTime
+frameCounter:800567056
+While loop time (l):42894
+While loop time (s):4.2894E-5
+While loop count:106
+render
+frames++
+frames:39
+--------------------------------------------
+lastTime:13326756776063
+startTime:13326777854063
+passedTime:21078000
+passedTime:0.021078
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02108911700000245400
+frameCounter += passedTime
+frameCounter:821645056
+While loop time (l):46496
+While loop time (s):4.6496E-5
+While loop count:105
+render
+frames++
+frames:40
+--------------------------------------------
+lastTime:13326777854063
+startTime:13326798723601
+passedTime:20869538
+passedTime:0.020869538
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02095865500000247000
+frameCounter += passedTime
+frameCounter:842514594
+While loop time (l):34293
+While loop time (s):3.4293E-5
+While loop count:104
+render
+frames++
+frames:41
+--------------------------------------------
+lastTime:13326798723601
+startTime:13326819594972
+passedTime:20871371
+passedTime:0.020871371
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02103002600000248800
+frameCounter += passedTime
+frameCounter:863385965
+While loop time (l):37558
+While loop time (s):3.7558E-5
+While loop count:105
+render
+frames++
+frames:42
+--------------------------------------------
+lastTime:13326819594972
+startTime:13326840509307
+passedTime:20914335
+passedTime:0.020914335
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02094436100000250300
+frameCounter += passedTime
+frameCounter:884300300
+While loop time (l):41076
+While loop time (s):4.1076E-5
+While loop count:104
+render
+frames++
+frames:43
+--------------------------------------------
+lastTime:13326840509307
+startTime:13326861713041
+passedTime:21203734
+passedTime:0.021203734
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02134809500000252000
+frameCounter += passedTime
+frameCounter:905504034
+While loop time (l):45356
+While loop time (s):4.5356E-5
+While loop count:106
+render
+frames++
+frames:44
+--------------------------------------------
+lastTime:13326861713041
+startTime:13326882922656
+passedTime:21209615
+passedTime:0.021209615
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02135771000000254000
+frameCounter += passedTime
+frameCounter:926713649
+While loop time (l):35093
+While loop time (s):3.5093E-5
+While loop count:106
+render
+frames++
+frames:45
+--------------------------------------------
+lastTime:13326882922656
+startTime:13326903840081
+passedTime:20917425
+passedTime:0.020917425
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02107513500000256200
+frameCounter += passedTime
+frameCounter:947631074
+While loop time (l):34280
+While loop time (s):3.428E-5
+While loop count:105
+render
+frames++
+frames:46
+--------------------------------------------
+lastTime:13326903840081
+startTime:13326924812489
+passedTime:20972408
+passedTime:0.020972408
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02104754300000258000
+frameCounter += passedTime
+frameCounter:968603482
+While loop time (l):41414
+While loop time (s):4.1414E-5
+While loop count:105
+render
+frames++
+frames:47
+--------------------------------------------
+lastTime:13326924812489
+startTime:13326945749573
+passedTime:20937084
+passedTime:0.020937084
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02098462700000259700
+frameCounter += passedTime
+frameCounter:989540566
+While loop time (l):33954
+While loop time (s):3.3954E-5
+While loop count:104
+render
+frames++
+frames:48
+--------------------------------------------
+lastTime:13326945749573
+startTime:13326966731450
+passedTime:20981877
+passedTime:0.020981877
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02116650400000261000
+frameCounter += passedTime
+frameCounter:1010522443
+frameCounter >= Time.SECOND
+frames:48
+While loop time (l):68321
+While loop time (s):6.8321E-5
+While loop count:105
+render
+frames++
+frames:1
+--------------------------------------------
+lastTime:13326966731450
+startTime:13326987624502
+passedTime:20893052
+passedTime:0.020893052
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02105955600000263000
+frameCounter += passedTime
+frameCounter:20893052
+While loop time (l):42767
+While loop time (s):4.2767E-5
+While loop count:105
+render
+frames++
+frames:2
+--------------------------------------------
+lastTime:13326987624502
+startTime:13327008714882
+passedTime:21090380
+passedTime:0.02109038
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02114993600000264500
+frameCounter += passedTime
+frameCounter:41983432
+While loop time (l):51492
+While loop time (s):5.1492E-5
+While loop count:105
+render
+frames++
+frames:3
+--------------------------------------------
+lastTime:13327008714882
+startTime:13327030077850
+passedTime:21362968
+passedTime:0.021362968
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02151290400000266400
+frameCounter += passedTime
+frameCounter:63346400
+While loop time (l):43281
+While loop time (s):4.3281E-5
+While loop count:107
+render
+frames++
+frames:4
+--------------------------------------------
+lastTime:13327030077850
+startTime:13327051082516
+passedTime:21004666
+passedTime:0.021004666
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02111757000000268800
+frameCounter += passedTime
+frameCounter:84351066
+While loop time (l):42762
+While loop time (s):4.2762E-5
+While loop count:105
+render
+frames++
+frames:5
+--------------------------------------------
+lastTime:13327051082516
+startTime:13327072315121
+passedTime:21232605
+passedTime:0.021232605
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02135017500000271000
+frameCounter += passedTime
+frameCounter:105583671
+While loop time (l):41894
+While loop time (s):4.1894E-5
+While loop count:106
+render
+frames++
+frames:6
+--------------------------------------------
+lastTime:13327072315121
+startTime:13327093511300
+passedTime:21196179
+passedTime:0.021196179
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02134635400000273000
+frameCounter += passedTime
+frameCounter:126779850
+While loop time (l):35186
+While loop time (s):3.5186E-5
+While loop count:106
+render
+frames++
+frames:7
+--------------------------------------------
+lastTime:13327093511300
+startTime:13327114557274
+passedTime:21045974
+passedTime:0.021045974
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02119232800000274800
+frameCounter += passedTime
+frameCounter:147825824
+While loop time (l):34438
+While loop time (s):3.4438E-5
+While loop count:105
+render
+frames++
+frames:8
+--------------------------------------------
+lastTime:13327114557274
+startTime:13327135449010
+passedTime:20891736
+passedTime:0.020891736
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02108406400000276500
+frameCounter += passedTime
+frameCounter:168717560
+While loop time (l):34183
+While loop time (s):3.4183E-5
+While loop count:105
+render
+frames++
+frames:9
+--------------------------------------------
+lastTime:13327135449010
+startTime:13327156422721
+passedTime:20973711
+passedTime:0.020973711
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02105777500000278000
+frameCounter += passedTime
+frameCounter:189691271
+While loop time (l):41501
+While loop time (s):4.1501E-5
+While loop count:105
+render
+frames++
+frames:10
+--------------------------------------------
+lastTime:13327156422721
+startTime:13327177389654
+passedTime:20966933
+passedTime:0.020966933
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02102470800000279600
+frameCounter += passedTime
+frameCounter:210658204
+While loop time (l):37477
+While loop time (s):3.7477E-5
+While loop count:105
+render
+frames++
+frames:11
+--------------------------------------------
+lastTime:13327177389654
+startTime:13327198315619
+passedTime:20925965
+passedTime:0.020925965
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02095067300000281300
+frameCounter += passedTime
+frameCounter:231584169
+While loop time (l):56284
+While loop time (s):5.6284E-5
+While loop count:104
+render
+frames++
+frames:12
+--------------------------------------------
+lastTime:13327198315619
+startTime:13327219220997
+passedTime:20905378
+passedTime:0.020905378
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02105605100000283000
+frameCounter += passedTime
+frameCounter:252489547
+While loop time (l):34376
+While loop time (s):3.4376E-5
+While loop count:105
+render
+frames++
+frames:13
+--------------------------------------------
+lastTime:13327219220997
+startTime:13327240165896
+passedTime:20944899
+passedTime:0.020944899
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02100095000000284600
+frameCounter += passedTime
+frameCounter:273434446
+While loop time (l):41864
+While loop time (s):4.1864E-5
+While loop count:105
+render
+frames++
+frames:14
+--------------------------------------------
+lastTime:13327240165896
+startTime:13327261344715
+passedTime:21178819
+passedTime:0.021178819
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02117976900000286300
+frameCounter += passedTime
+frameCounter:294613265
+While loop time (l):42356
+While loop time (s):4.2356E-5
+While loop count:105
+render
+frames++
+frames:15
+--------------------------------------------
+lastTime:13327261344715
+startTime:13327282402366
+passedTime:21057651
+passedTime:0.021057651
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02123742000000288000
+frameCounter += passedTime
+frameCounter:315670916
+While loop time (l):38259
+While loop time (s):3.8259E-5
+While loop count:106
+render
+frames++
+frames:16
+--------------------------------------------
+lastTime:13327282402366
+startTime:13327303305226
+passedTime:20902860
+passedTime:0.02090286
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02094028000000289600
+frameCounter += passedTime
+frameCounter:336573776
+While loop time (l):41387
+While loop time (s):4.1387E-5
+While loop count:104
+render
+frames++
+frames:17
+--------------------------------------------
+lastTime:13327303305226
+startTime:13327324291766
+passedTime:20986540
+passedTime:0.02098654
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02112682000000291500
+frameCounter += passedTime
+frameCounter:357560316
+While loop time (l):34537
+While loop time (s):3.4537E-5
+While loop count:105
+render
+frames++
+frames:18
+--------------------------------------------
+lastTime:13327324291766
+startTime:13327345294888
+passedTime:21003122
+passedTime:0.021003122
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02112994200000293400
+frameCounter += passedTime
+frameCounter:378563438
+While loop time (l):37958
+While loop time (s):3.7958E-5
+While loop count:105
+render
+frames++
+frames:19
+--------------------------------------------
+lastTime:13327345294888
+startTime:13327366352223
+passedTime:21057335
+passedTime:0.021057335
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02118727700000295300
+frameCounter += passedTime
+frameCounter:399620773
+While loop time (l):41547
+While loop time (s):4.1547E-5
+While loop count:105
+render
+frames++
+frames:20
+--------------------------------------------
+lastTime:13327366352223
+startTime:13327387296902
+passedTime:20944679
+passedTime:0.020944679
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02113195600000297000
+frameCounter += passedTime
+frameCounter:420565452
+While loop time (l):54153
+While loop time (s):5.4153E-5
+While loop count:105
+render
+frames++
+frames:21
+--------------------------------------------
+lastTime:13327387296902
+startTime:13327408373030
+passedTime:21076128
+passedTime:0.021076128
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02120808400000299000
+frameCounter += passedTime
+frameCounter:441641580
+While loop time (l):41721
+While loop time (s):4.1721E-5
+While loop count:106
+render
+frames++
+frames:22
+--------------------------------------------
+lastTime:13327408373030
+startTime:13327429301424
+passedTime:20928394
+passedTime:0.020928394
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02093647800000300600
+frameCounter += passedTime
+frameCounter:462569974
+While loop time (l):33697
+While loop time (s):3.3697E-5
+While loop count:104
+render
+frames++
+frames:23
+--------------------------------------------
+lastTime:13327429301424
+startTime:13327450199736
+passedTime:20898312
+passedTime:0.020898312
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02103479000000302300
+frameCounter += passedTime
+frameCounter:483468286
+While loop time (l):34106
+While loop time (s):3.4106E-5
+While loop count:105
+render
+frames++
+frames:24
+--------------------------------------------
+lastTime:13327450199736
+startTime:13327471145125
+passedTime:20945389
+passedTime:0.020945389
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02098017900000303700
+frameCounter += passedTime
+frameCounter:504413675
+While loop time (l):34366
+While loop time (s):3.4366E-5
+While loop count:104
+render
+frames++
+frames:25
+--------------------------------------------
+lastTime:13327471145125
+startTime:13327492076132
+passedTime:20931007
+passedTime:0.020931007
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02111118600000305400
+frameCounter += passedTime
+frameCounter:525344682
+While loop time (l):34386
+While loop time (s):3.4386E-5
+While loop count:105
+render
+frames++
+frames:26
+--------------------------------------------
+lastTime:13327492076132
+startTime:13327512964199
+passedTime:20888067
+passedTime:0.020888067
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02099925300000307300
+frameCounter += passedTime
+frameCounter:546232749
+While loop time (l):41013
+While loop time (s):4.1013E-5
+While loop count:104
+render
+frames++
+frames:27
+--------------------------------------------
+lastTime:13327512964199
+startTime:13327533945447
+passedTime:20981248
+passedTime:0.020981248
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02118050100000309000
+frameCounter += passedTime
+frameCounter:567213997
+While loop time (l):37197
+While loop time (s):3.7197E-5
+While loop count:105
+render
+frames++
+frames:28
+--------------------------------------------
+lastTime:13327533945447
+startTime:13327554914855
+passedTime:20969408
+passedTime:0.020969408
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02114990900000310300
+frameCounter += passedTime
+frameCounter:588183405
+While loop time (l):33963
+While loop time (s):3.3963E-5
+While loop count:105
+render
+frames++
+frames:29
+--------------------------------------------
+lastTime:13327554914855
+startTime:13327575808877
+passedTime:20894022
+passedTime:0.020894022
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02104393100000312400
+frameCounter += passedTime
+frameCounter:609077427
+While loop time (l):41837
+While loop time (s):4.1837E-5
+While loop count:105
+render
+frames++
+frames:30
+--------------------------------------------
+lastTime:13327575808877
+startTime:13327596909198
+passedTime:21100321
+passedTime:0.021100321
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02114425200000314000
+frameCounter += passedTime
+frameCounter:630177748
+While loop time (l):47828
+While loop time (s):4.7828E-5
+While loop count:105
+render
+frames++
+frames:31
+--------------------------------------------
+lastTime:13327596909198
+startTime:13327617976343
+passedTime:21067145
+passedTime:0.021067145
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02121139700000315700
+frameCounter += passedTime
+frameCounter:651244893
+While loop time (l):37557
+While loop time (s):3.7557E-5
+While loop count:106
+render
+frames++
+frames:32
+--------------------------------------------
+lastTime:13327617976343
+startTime:13327638860983
+passedTime:20884640
+passedTime:0.02088464
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02089603700000317400
+frameCounter += passedTime
+frameCounter:672129533
+While loop time (l):33629
+While loop time (s):3.3629E-5
+While loop count:104
+render
+frames++
+frames:33
+--------------------------------------------
+lastTime:13327638860983
+startTime:13327659888307
+passedTime:21027324
+passedTime:0.021027324
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02112336100000319000
+frameCounter += passedTime
+frameCounter:693156857
+While loop time (l):42379
+While loop time (s):4.2379E-5
+While loop count:105
+render
+frames++
+frames:34
+--------------------------------------------
+lastTime:13327659888307
+startTime:13327680907151
+passedTime:21018844
+passedTime:0.021018844
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02114220500000320600
+frameCounter += passedTime
+frameCounter:714175701
+While loop time (l):34196
+While loop time (s):3.4196E-5
+While loop count:105
+render
+frames++
+frames:35
+--------------------------------------------
+lastTime:13327680907151
+startTime:13327701861351
+passedTime:20954200
+passedTime:0.0209542
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02109640500000322500
+frameCounter += passedTime
+frameCounter:735129901
+While loop time (l):37750
+While loop time (s):3.775E-5
+While loop count:105
+render
+frames++
+frames:36
+--------------------------------------------
+lastTime:13327701861351
+startTime:13327723048815
+passedTime:21187464
+passedTime:0.021187464
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02128386900000324000
+frameCounter += passedTime
+frameCounter:756317365
+While loop time (l):38609
+While loop time (s):3.8609E-5
+While loop count:106
+render
+frames++
+frames:37
+--------------------------------------------
+lastTime:13327723048815
+startTime:13327744353416
+passedTime:21304601
+passedTime:0.021304601
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02138847000000325800
+frameCounter += passedTime
+frameCounter:777621966
+While loop time (l):30221
+While loop time (s):3.0221E-5
+While loop count:106
+render
+frames++
+frames:38
+--------------------------------------------
+lastTime:13327744353416
+startTime:13327765550507
+passedTime:21197091
+passedTime:0.021197091
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02138556100000327600
+frameCounter += passedTime
+frameCounter:798819057
+While loop time (l):27557
+While loop time (s):2.7557E-5
+While loop count:106
+render
+frames++
+frames:39
+--------------------------------------------
+lastTime:13327765550507
+startTime:13327786600091
+passedTime:21049584
+passedTime:0.021049584
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02123514500000329300
+frameCounter += passedTime
+frameCounter:819868641
+While loop time (l):43001
+While loop time (s):4.3001E-5
+While loop count:106
+render
+frames++
+frames:40
+--------------------------------------------
+lastTime:13327786600091
+startTime:13327807826201
+passedTime:21226110
+passedTime:0.02122611
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02126125500000331000
+frameCounter += passedTime
+frameCounter:841094751
+While loop time (l):57784
+While loop time (s):5.7784E-5
+While loop count:106
+render
+frames++
+frames:41
+--------------------------------------------
+lastTime:13327807826201
+startTime:13327829155522
+passedTime:21329321
+passedTime:0.021329321
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02139057600000332500
+frameCounter += passedTime
+frameCounter:862424072
+While loop time (l):42804
+While loop time (s):4.2804E-5
+While loop count:106
+render
+frames++
+frames:42
+--------------------------------------------
+lastTime:13327829155522
+startTime:13327850222748
+passedTime:21067226
+passedTime:0.021067226
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02125780200000334400
+frameCounter += passedTime
+frameCounter:883491298
+While loop time (l):38382
+While loop time (s):3.8382E-5
+While loop count:106
+render
+frames++
+frames:43
+--------------------------------------------
+lastTime:13327850222748
+startTime:13327871352531
+passedTime:21129783
+passedTime:0.021129783
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02118758500000336000
+frameCounter += passedTime
+frameCounter:904621081
+While loop time (l):35015
+While loop time (s):3.5015E-5
+While loop count:105
+render
+frames++
+frames:44
+--------------------------------------------
+lastTime:13327871352531
+startTime:13327892318021
+passedTime:20965490
+passedTime:0.02096549
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02115307500000337600
+frameCounter += passedTime
+frameCounter:925586571
+While loop time (l):38202
+While loop time (s):3.8202E-5
+While loop count:105
+render
+frames++
+frames:45
+--------------------------------------------
+lastTime:13327892318021
+startTime:13327913326833
+passedTime:21008812
+passedTime:0.021008812
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02116188700000339700
+frameCounter += passedTime
+frameCounter:946595383
+While loop time (l):27789
+While loop time (s):2.7789E-5
+While loop count:105
+render
+frames++
+frames:46
+--------------------------------------------
+lastTime:13327913326833
+startTime:13327934003083
+passedTime:20676250
+passedTime:0.02067625
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02083813700000341700
+frameCounter += passedTime
+frameCounter:967271633
+While loop time (l):30696
+While loop time (s):3.0696E-5
+While loop count:104
+render
+frames++
+frames:47
+--------------------------------------------
+lastTime:13327934003083
+startTime:13327954858116
+passedTime:20855033
+passedTime:0.020855033
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02089317000000343000
+frameCounter += passedTime
+frameCounter:988126666
+While loop time (l):27439
+While loop time (s):2.7439E-5
+While loop count:104
+render
+frames++
+frames:48
+--------------------------------------------
+lastTime:13327954858116
+startTime:13327975873297
+passedTime:21015181
+passedTime:0.021015181
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02110835100000344600
+frameCounter += passedTime
+frameCounter:1009141847
+frameCounter >= Time.SECOND
+frames:48
+While loop time (l):64675
+While loop time (s):6.4675E-5
+While loop count:105
+render
+frames++
+frames:1
+--------------------------------------------
+lastTime:13327975873297
+startTime:13327997093799
+passedTime:21220502
+passedTime:0.021220502
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02132885300000346400
+frameCounter += passedTime
+frameCounter:21220502
+While loop time (l):30994
+While loop time (s):3.0994E-5
+While loop count:106
+render
+frames++
+frames:2
+--------------------------------------------
+lastTime:13327997093799
+startTime:13328018131244
+passedTime:21037445
+passedTime:0.021037445
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02116629800000348300
+frameCounter += passedTime
+frameCounter:42257947
+While loop time (l):23722
+While loop time (s):2.3722E-5
+While loop count:105
+render
+frames++
+frames:3
+--------------------------------------------
+lastTime:13328018131244
+startTime:13328062776552
+passedTime:44645308
+passedTime:0.044645308
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.04481160600000350000
+frameCounter += passedTime
+frameCounter:86903255
+While loop time (l):49660
+While loop time (s):4.966E-5
+While loop count:224
+render
+frames++
+frames:4
+--------------------------------------------
+lastTime:13328062776552
+startTime:13328083605253
+passedTime:20828701
+passedTime:0.020828701
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02084030700000366300
+frameCounter += passedTime
+frameCounter:107731956
+While loop time (l):32563
+While loop time (s):3.2563E-5
+While loop count:104
+render
+frames++
+frames:5
+--------------------------------------------
+lastTime:13328083605253
+startTime:13328104729439
+passedTime:21124186
+passedTime:0.021124186
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02116449300000367700
+frameCounter += passedTime
+frameCounter:128856142
+While loop time (l):34852
+While loop time (s):3.4852E-5
+While loop count:105
+render
+frames++
+frames:6
+--------------------------------------------
+lastTime:13328104729439
+startTime:13328126473666
+passedTime:21744227
+passedTime:0.021744227
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02190872000000369800
+frameCounter += passedTime
+frameCounter:150600369
+While loop time (l):46531
+While loop time (s):4.6531E-5
+While loop count:109
+render
+frames++
+frames:7
+--------------------------------------------
+lastTime:13328126473666
+startTime:13328147716293
+passedTime:21242627
+passedTime:0.021242627
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02135134700000372200
+frameCounter += passedTime
+frameCounter:171842996
+While loop time (l):38827
+While loop time (s):3.8827E-5
+While loop count:106
+render
+frames++
+frames:8
+--------------------------------------------
+lastTime:13328147716293
+startTime:13328168757517
+passedTime:21041224
+passedTime:0.021041224
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02119257100000374400
+frameCounter += passedTime
+frameCounter:192884220
+While loop time (l):42289
+While loop time (s):4.2289E-5
+While loop count:105
+render
+frames++
+frames:9
+--------------------------------------------
+lastTime:13328168757517
+startTime:13328189777088
+passedTime:21019571
+passedTime:0.021019571
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02121214200000376000
+frameCounter += passedTime
+frameCounter:213903791
+While loop time (l):53437
+While loop time (s):5.3437E-5
+While loop count:106
+render
+frames++
+frames:10
+--------------------------------------------
+lastTime:13328189777088
+startTime:13328210857155
+passedTime:21080067
+passedTime:0.021080067
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02109220900000378000
+frameCounter += passedTime
+frameCounter:234983858
+While loop time (l):46954
+While loop time (s):4.6954E-5
+While loop count:105
+render
+frames++
+frames:11
+--------------------------------------------
+lastTime:13328210857155
+startTime:13328231738933
+passedTime:20881778
+passedTime:0.020881778
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02097398700000379500
+frameCounter += passedTime
+frameCounter:255865636
+While loop time (l):34230
+While loop time (s):3.423E-5
+While loop count:104
+render
+frames++
+frames:12
+--------------------------------------------
+lastTime:13328231738933
+startTime:13328252729482
+passedTime:20990549
+passedTime:0.020990549
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02116453600000381400
+frameCounter += passedTime
+frameCounter:276856185
+While loop time (l):41530
+While loop time (s):4.153E-5
+While loop count:105
+render
+frames++
+frames:13
+--------------------------------------------
+lastTime:13328252729482
+startTime:13328273767992
+passedTime:21038510
+passedTime:0.02103851
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02120304600000383300
+frameCounter += passedTime
+frameCounter:297894695
+While loop time (l):42961
+While loop time (s):4.2961E-5
+While loop count:106
+render
+frames++
+frames:14
+--------------------------------------------
+lastTime:13328273767992
+startTime:13328294823506
+passedTime:21055514
+passedTime:0.021055514
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02105856000000385000
+frameCounter += passedTime
+frameCounter:318950209
+While loop time (l):32341
+While loop time (s):3.2341E-5
+While loop count:105
+render
+frames++
+frames:15
+--------------------------------------------
+lastTime:13328294823506
+startTime:13328315995938
+passedTime:21172432
+passedTime:0.021172432
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02123099200000387000
+frameCounter += passedTime
+frameCounter:340122641
+While loop time (l):35765
+While loop time (s):3.5765E-5
+While loop count:106
+render
+frames++
+frames:16
+--------------------------------------------
+lastTime:13328315995938
+startTime:13328337032110
+passedTime:21036172
+passedTime:0.021036172
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02106716400000388500
+frameCounter += passedTime
+frameCounter:361158813
+While loop time (l):34699
+While loop time (s):3.4699E-5
+While loop count:105
+render
+frames++
+frames:17
+--------------------------------------------
+lastTime:13328337032110
+startTime:13328359737550
+passedTime:22705440
+passedTime:0.02270544
+unprocessedTime += passedTime / (double)Time.SECOND
+unprocessedTime: 0.02277260400000390000
+frameCounter += passedTime
