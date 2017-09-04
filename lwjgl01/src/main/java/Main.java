@@ -55,10 +55,14 @@ public class Main implements Runnable{
       throw new RuntimeException("Failed to create the GLFW window");
 
     // Setup a key callback. It will be called every time a key is pressed, repeated or released.
+    /*
     glfwSetKeyCallback(window, (window, key, scancode, action, mods) -> {
       if ( key == GLFW_KEY_ESCAPE && action == GLFW_RELEASE )
         glfwSetWindowShouldClose(window, true); // We will detect this in the rendering loop
     });
+    */
+
+    glfwSetKeyCallback(window, new Input());
 
     try ( MemoryStack stack = stackPush() ) {
       IntBuffer pWidth = stack.mallocInt(1); // int* // ADDED
@@ -76,12 +80,15 @@ public class Main implements Runnable{
       );
     }
 
-    glfwSetKeyCallback(window, new Input());
-
     // Make the OpenGL context current
     glfwMakeContextCurrent(window);
     // Make the window visible
     glfwShowWindow(window);
+
+    GL.createCapabilities();
+    glClearColor(1.0f, 0.0f, 1.0f, 1.0f);
+    glEnable(GL_DEPTH_TEST);
+
   }
 
   public void run(){
@@ -97,11 +104,17 @@ public class Main implements Runnable{
   }
 
   private void render(){
-      glfwSwapBuffers(window); // swap the color buffers
+
+    //GL.createCapabilities(); // tu też dodać capabilities???
+    glClear(GL_COLOR_BUFFER_BIT);
+    glfwSwapBuffers(window); // swap the color buffers
   }
 
   private void update(){
       glfwPollEvents();
+      if(Input.keys[GLFW_KEY_SPACE]){
+        System.out.println("Space");
+      }
   }
 
 
