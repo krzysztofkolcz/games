@@ -76,6 +76,8 @@ public class Main implements Runnable{
       );
     }
 
+    glfwSetKeyCallback(window, new Input());
+
     // Make the OpenGL context current
     glfwMakeContextCurrent(window);
     // Make the window visible
