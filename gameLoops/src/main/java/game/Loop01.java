@@ -13,7 +13,7 @@ public class Loop01 extends JPanel
 	public static final int WIDTH = 320;
 	public static final int HEIGHT = 240;
 	public static final int SCALE = 2;
-  public static final long MS_PER_UPDATE = 200;
+  public static final long MS_PER_UPDATE = 5;
 	
 	// game thread
 	private Thread thread;
@@ -76,7 +76,7 @@ public class Loop01 extends JPanel
         updateCounter++;
         render = true;
         gsm.update();
-        Input.update();
+        Input.update();//na podstawie video: https://www.youtube.com/watch?v=pBK-lb-k-rs&index=4&list=PLEETnX-uPtBXP_B2yupUKlflXBznWIlL5
         lag -= MS_PER_UPDATE;
         System.out.println("update:"+updateCounter+"; lag:"+lag);
       }
