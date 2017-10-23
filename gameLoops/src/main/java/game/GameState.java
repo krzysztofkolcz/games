@@ -11,5 +11,3 @@ public abstract class GameState {
 	/* public abstract void keyReleased(int k); */
 	
 }
-
-
