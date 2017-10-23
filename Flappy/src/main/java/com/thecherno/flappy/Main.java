@@ -1,14 +1,31 @@
 package com.thecherno.flappy;
 
+/*
 import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.opengl.GL13.*;
 import static org.lwjgl.system.MemoryUtil.*;
+import static org.lwjgl.system.MemoryStack.*;
 
 import java.nio.ByteBuffer;
 
-import org.lwjgl.glfw.GLFWvidmode;
-import org.lwjgl.opengl.GLContext;
+import org.lwjgl.glfw.GLFWVidMode;
+
+*/
+
+import org.lwjgl.*;
+import org.lwjgl.glfw.*;
+import org.lwjgl.opengl.*;
+import org.lwjgl.system.*;
+
+import java.nio.*;
+
+import static org.lwjgl.glfw.Callbacks.*;
+import static org.lwjgl.glfw.GLFW.*;
+import static org.lwjgl.opengl.GL11.*;
+import static org.lwjgl.opengl.GL13.*;
+import static org.lwjgl.system.MemoryStack.*;
+import static org.lwjgl.system.MemoryUtil.*;
 
 import com.thecherno.flappy.graphics.Shader;
 import com.thecherno.flappy.input.Input;
@@ -34,7 +51,7 @@ public class Main implements Runnable {
 	}
 	
 	private void init() {
-		if (glfwInit() != GL_TRUE) {
+		if (glfwInit() != true) {
 			System.err.println("Could not initialize GLFW!");
 			return;
 		}
@@ -45,16 +62,25 @@ public class Main implements Runnable {
 			System.err.println("Could not create GLFW window!");
 			return;
 		}
-		
-		ByteBuffer vidmode = glfwGetVideoMode(glfwGetPrimaryMonitor());
-		glfwSetWindowPos(window, (GLFWvidmode.width(vidmode) - width) / 2, (GLFWvidmode.height(vidmode) - height) / 2);
+
+    try ( MemoryStack stack = stackPush() ) {
+      IntBuffer pWidth = stack.mallocInt(1); // int* // ADDED
+      IntBuffer pHeight = stack.mallocInt(1); // int* //ADDED
+      
+      GLFWVidMode vidmode = glfwGetVideoMode(glfwGetPrimaryMonitor());
+      glfwSetWindowPos(
+        window,
+        (vidmode.width() - pWidth.get(0)) / 2, //GLFWvidmode -> vidmode
+        (vidmode.height() - pHeight.get(0)) / 2 //GLFWvidmode -> vidmode
+      );
+    }
 		
 		glfwSetKeyCallback(window, new Input());
 		
 		glfwMakeContextCurrent(window);
 		glfwShowWindow(window);
-		GLContext.createFromCurrent();
 		
+    GL.createCapabilities();
  		glEnable(GL_DEPTH_TEST);
 		glActiveTexture(GL_TEXTURE1);
 		glEnable(GL_BLEND);
@@ -101,7 +127,7 @@ public class Main implements Runnable {
 				updates = 0;
 				frames = 0;
 			}
-			if (glfwWindowShouldClose(window) == GL_TRUE)
+			if (glfwWindowShouldClose(window))
 				running = false;
 		}
 		
