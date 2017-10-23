@@ -67,3 +67,12 @@ Wynika z tego, że javac nie ma możliwości kopiowania zasobów typu images (zn
 Czytam:
 http://www.koonsolo.com/news/dewitters-gameloop/
 Jeszcze brak zadnej implementacji
+
+
+
+gameLoops
+ Loop01 - implementacja ostatniego algorytmu z artykułu:
+ http://gameprogrammingpatterns.com/game-loop.html
+
+
+

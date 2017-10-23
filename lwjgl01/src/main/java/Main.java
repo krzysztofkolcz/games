@@ -81,13 +81,14 @@ public class Main implements Runnable{
     }
 
     // Make the OpenGL context current
-    glfwMakeContextCurrent(window);
+    glfwMakeContextCurrent(window);// GLContext.createFromCurrrent -> glfwMakeContextCurrent(window);
     // Make the window visible
     glfwShowWindow(window);
 
     GL.createCapabilities();
     glClearColor(1.0f, 0.0f, 1.0f, 1.0f);
     glEnable(GL_DEPTH_TEST);
+    System.out.println("OpenGL:" + glGetString(GL_VERSION));
 
   }
 
@@ -106,7 +107,7 @@ public class Main implements Runnable{
   private void render(){
 
     //GL.createCapabilities(); // tu też dodać capabilities???
-    glClear(GL_COLOR_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glfwSwapBuffers(window); // swap the color buffers
   }
 
