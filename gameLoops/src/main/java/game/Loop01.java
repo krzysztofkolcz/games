@@ -14,6 +14,11 @@ public class Loop01 extends JPanel
 	public static final int HEIGHT = 240;
 	public static final int SCALE = 2;
   public static final long MS_PER_UPDATE = 5;
+  /*
+  MS_PER_UPDATE But be careful not to make it too short. 
+  You need to make sure the time step is greater than the time it takes to process an update(),
+  even on the slowest hardware. Otherwise, your game simply can’t catch up. 
+  */
 	
 	// game thread
 	private Thread thread;
@@ -68,6 +73,7 @@ public class Loop01 extends JPanel
 			current = System.nanoTime();/* startTime in Benny */
 			elapsed = current - previous;/* passedTime in Benny */
       previous = current;
+      /* uzyskuje lag w milisekundach - czyli ile milisekund gra musi nadrobić za czasem rzeczywistym. */
       lag += (long)(elapsed/1000000); /* unprocessedTime += passedTime/(double)Time.SECOND; //Time.SECOND = 1000000000 */
 
       //processInput();//tutaj pobieranie inputu nie wydaje się sensowne.
@@ -101,7 +107,7 @@ public class Loop01 extends JPanel
 
       if(render){
         frameCounter++;
-        draw();
+        draw();/*renderowanie powinno zabierać stały czas?*/
         drawToScreen();
         render = false;
         System.out.println("frame:"+frameCounter);
