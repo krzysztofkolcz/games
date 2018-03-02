@@ -1,0 +1,1 @@
+"C:\Program Files\Java\jdk1.8.0_151\bin\javac" src\main\com\platformer01_ex01\gamestate\*.java src\main\com\platformer01_ex01\bricks\*.java src\main\com\platformer01_ex01\*.java -d target

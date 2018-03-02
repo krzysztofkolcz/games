@@ -74,5 +74,10 @@ gameLoops
  Loop01 - implementacja ostatniego algorytmu z artykułu:
  http://gameprogrammingpatterns.com/game-loop.html
 
+ tetris - próba zastosowania poprawnej pętli do projektu tetris.
+
+ majoloowip - przerabiam tuorial:
+ https://www.youtube.com/watch?v=4iPEjFUZNsw&t=4s&list=PLOPTfh6qj6X7otqsyLaKpzlNuHOA3uGkt&index=13
+ Koleś robii loopa na podstawie loopa Bennego ;)
 
 
